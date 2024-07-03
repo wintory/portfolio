@@ -1,0 +1,9 @@
+{
+  "scss.lint.compatibleVendorPrefixes": "warning",
+  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": true,
+  "search.quickOpen.includeSymbols": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+}
