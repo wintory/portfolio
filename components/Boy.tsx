@@ -1,7 +1,7 @@
 'use client'
 
 import { OrbitControls, Stage } from '@react-three/drei'
-import { Canvas, useLoader } from '@react-three/fiber'
+import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import { FC, Suspense, useRef } from 'react'
 import { Mesh } from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
@@ -11,9 +11,9 @@ const MeshComponent = () => {
   const mesh = useRef<Mesh>(null!)
   const gltf = useLoader(GLTFLoader, fileUrl)
 
-  // useFrame(() => {
-  //   mesh.current.rotation.y += 0.01
-  // })
+  useFrame(() => {
+    mesh.current.rotation.y += 0.001
+  })
 
   return (
     <mesh ref={mesh}>
@@ -24,7 +24,7 @@ const MeshComponent = () => {
 
 const BoyComponent: FC = () => {
   return (
-    <div className="flex justify-center items-center h-full w-full">
+    <div className="flex justify-center items-center h-full w-full z-0">
       <Suspense fallback={null}>
         <Canvas className="h-2xl w-2xl">
           <OrbitControls />
