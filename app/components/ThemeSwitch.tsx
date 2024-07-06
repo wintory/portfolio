@@ -9,7 +9,6 @@ const ThemeSwitch = () => {
 
   const onThemeChange = () => {
     const value = theme === 'light' ? 'dark' : 'light'
-    localStorage.setItem('theme', value)
     setTheme(value)
   }
 

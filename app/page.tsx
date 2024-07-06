@@ -1,8 +1,9 @@
 'use client'
-import NavBar from '@/components/NavBar'
 import ThemeProvider from '@/providers/ThemeProvider'
 import { useRef } from 'react'
 import { ParallaxProvider } from 'react-scroll-parallax'
+import NavBar from './components/NavBar'
+import MainContent from './sections/MainContent'
 
 export default function Home() {
   const target = useRef(null)
@@ -21,6 +22,7 @@ export default function Home() {
       <ThemeProvider>
         <ParallaxProvider scrollAxis="horizontal">
           <NavBar />
+          <MainContent />
           {/* <BoyComponent /> */}
         </ParallaxProvider>
       </ThemeProvider>
