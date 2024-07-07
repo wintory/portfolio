@@ -1,17 +1,31 @@
 'use client'
 
-import { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import { FC } from 'react'
 
 interface ImageProfileProps {
-  pic: StaticImageData
+  imagePath: string
   className?: string
   alt?: string
+  width?: number
+  height?: number
 }
 
-const ImageProfile: FC<ImageProfileProps> = ({ alt, pic, className }) => {
+const ImageProfile: FC<ImageProfileProps> = ({
+  alt,
+  imagePath,
+  className,
+  width,
+  height,
+}) => {
   return (
-    <div className={className}>{/* <Image src={pic} alt={alt || ''} /> */}</div>
+    <Image
+      className={className}
+      src={imagePath}
+      alt={alt || ''}
+      width={width}
+      height={height}
+    />
   )
 }
 

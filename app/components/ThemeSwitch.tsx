@@ -19,7 +19,7 @@ const ThemeSwitch = () => {
   if (!mounted) return null
 
   return (
-    <label className="swap swap-rotate rounded-full hover:bg-[]">
+    <label className="swap swap-rotate rounded-full">
       <input
         type="checkbox"
         onChange={onThemeChange}
