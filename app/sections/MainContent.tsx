@@ -15,27 +15,27 @@ const MainContent = () => {
       /> */}
       <div className="w-full sm:p-4 sm:text-center md:px-8 md:text-left">
         <AnimatedTextCharacter
-          className="text-bold sm:text-md pb-2 md:pr-1 md:text-lg"
+          className="text-bold pb-2 sm:text-sm md:pr-1 md:text-lg"
           text="Hello there 👋 I'm"
         />
         <AnimatedTextCharacter
-          className="text-bold pb-2 sm:text-lg md:pr-1 md:text-3xl"
+          className="text-bold pb-2 sm:text-lg md:pr-1 md:text-5xl"
           text="Thanapol Sakullertphasuk"
         />
         <div className="relative w-[100%] md:inline-flex">
           <AnimatedTextCharacter
-            className="contents sm:text-sm md:text-lg"
+            className="contents sm:text-sm md:text-xl"
             text="Senior front-end developer with a passion in"
           />
           <AnimateTextList
-            className="flex w-[100%] items-end text-warning sm:justify-center sm:pt-2 sm:text-sm md:justify-start md:pl-2 md:pt-0 md:text-lg"
+            className="flex w-[100%] items-end text-warning sm:justify-center sm:pt-2 sm:text-sm md:justify-start md:pl-2 md:pt-0 md:text-xl"
             textList={textList}
           />
         </div>
       </div>
       <ImageProfile
-        imagePath="/profile-cartoon.png"
-        className="absolute bottom-0 right-0"
+        imagePath="/profile.png"
+        className="absolute bottom-[60px] sm:w-[300px] md:right-0 md:w-[600px]"
         width={600}
         height={600}
       />

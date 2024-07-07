@@ -2,7 +2,6 @@
 
 import ThemeProvider from '@/providers/ThemeProvider'
 import { IBM_Plex_Sans } from 'next/font/google'
-import { useRef } from 'react'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import NavBar from './components/NavBar'
 import MainContent from './sections/MainContent'
@@ -13,17 +12,6 @@ const sans = IBM_Plex_Sans({
 })
 
 export default function Home() {
-  const target = useRef(null)
-  // const train = useParallax({
-  //   speed: 500,
-  //   targetElement: target.current,
-  // })
-
-  // const cloud = useParallax({
-  //   speed: 200,
-  //   targetElement: target.current,
-  // })
-
   return (
     <main className="relative block h-[100vh] w-[100vw] items-center justify-center">
       <style jsx global>{`
