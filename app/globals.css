@@ -19,33 +19,15 @@
 body {
   color: rgb(var(--foreground-rgb));
   margin: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow-x: hidden;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
-
-.bg {
-  animation: slide 10s ease-in-out forwards alternate;
-  background-image: linear-gradient(-60deg, #1e1e1e 50%, #908e8e 50%);
-  bottom: 0;
-  left: -50%;
-  opacity: 0.5;
-  position: fixed;
-  right: -50%;
-  top: 0;
-  z-index: -1;
-}
-
-.bg2 {
-  animation-direction: alternate-reverse;
-  animation-duration: 4s;
-}
-
-.bg3 {
-  animation-duration: 5s;
 }
 
 @keyframes slide {

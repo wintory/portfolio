@@ -18,7 +18,7 @@ export default function Home() {
   // })
 
   return (
-    <main className="flex h-screen w-screen flex-col items-center justify-center">
+    <main className="flex h-[100vh] w-[100vw] items-center justify-center">
       <ThemeProvider>
         <ParallaxProvider scrollAxis="horizontal">
           <NavBar />

@@ -38,7 +38,7 @@ const AnimateTextList: FC<AnimateTextProps> = ({
 
   return (
     <motion.div
-      className={`text-center text-white ${className}`}
+      className={`text-center ${className}`}
       variants={container}
       initial="hidden"
       animate="visible"
