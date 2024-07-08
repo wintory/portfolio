@@ -11,7 +11,7 @@ const AnimateTextList: FC<AnimateTextProps> = ({
   className,
 }) => {
   return (
-    <span className={`inline-block duration-1000 ${className} `}>
+    <span className={className}>
       <Typewriter
         options={{
           strings: textList,

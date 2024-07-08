@@ -1,16 +1,16 @@
-import { useEffect, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 import AnimatedTextCharacter from '../components/AnimateTextCharacter'
 import AnimateTextList from '../components/AnimateTextList'
 import ImageProfile from '../components/ImageProfile'
 import SocialMedia from '../components/SocialMedia'
 
-const MainContent = () => {
+const MainContent: FC = () => {
   const [isShowTextList, setIsShowTextList] = useState<boolean>(false)
   const textList = [
-    'JavaScript',
-    'React',
+    // 'JavaScript',
+    // 'React',
     'Web Development',
-    'Problem Solving',
+    // 'Problem Solving',
     'People Management',
   ]
 
@@ -21,8 +21,8 @@ const MainContent = () => {
   }, [])
 
   return (
-    <div className="relative flex h-screen w-screen items-center justify-center text-xl sm:p-2 lg:max-h-[800px] lg:p-8">
-      <div className="z-30 sm:p-4 sm:text-center lg:min-w-[650px] lg:text-left">
+    <div className="relative flex h-screen w-screen items-center justify-center text-xl sm:p-2 lg:max-h-[600px] lg:p-8">
+      <div className="sm:p-4 sm:text-center lg:min-w-[600px] lg:text-left">
         <AnimatedTextCharacter
           className="text-bold mb-2 sm:text-sm md:text-lg lg:pr-1"
           text="Hello there 👋 I'm"
@@ -31,14 +31,14 @@ const MainContent = () => {
           className="text-bold mb-2 sm:text-lg md:text-5xl lg:pr-1"
           text="Thanapol Sakullertphasuk"
         />
-        <div className="relative w-[100%] items-center md:inline-flex">
+        <div className="relative w-[100%] items-baseline md:inline-flex md:min-w-[600px]">
           <AnimatedTextCharacter
             className="contents sm:text-sm md:text-xl"
             text="Senior front-end developer with a passion in"
           />
           {isShowTextList && (
             <AnimateTextList
-              className="flex w-[100%] items-end text-warning sm:justify-center sm:pt-2 sm:text-sm md:text-xl lg:justify-start lg:pl-2 lg:pt-0"
+              className="flex items-end text-warning sm:justify-center sm:pt-2 sm:text-sm md:justify-start md:pl-2 md:pt-0 md:text-lg"
               textList={textList}
             />
           )}
@@ -54,7 +54,7 @@ const MainContent = () => {
       </div>
       <ImageProfile
         imagePath="/images/profile-pic.png"
-        className="absolute sm:absolute sm:bottom-[-80px] sm:h-[40%] sm:w-auto lg:relative lg:bottom-0 lg:right-0 lg:h-auto lg:w-[400px] lg:rounded-full"
+        className="] absolute sm:absolute sm:bottom-[-80px] sm:h-[40%] sm:w-auto lg:relative lg:bottom-0 lg:h-auto lg:w-[370px] lg:rounded-full"
         width={600}
         height={600}
       />
