@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion'
-import { FC, useEffect, useState } from 'react'
+import { FC } from 'react'
+import Typewriter from 'typewriter-effect'
 
 interface AnimateTextProps {
   textList: string[]
@@ -10,43 +10,16 @@ const AnimateTextList: FC<AnimateTextProps> = ({
   textList = [],
   className,
 }) => {
-  const [selectedTextIndex, setSelectedTextIndex] = useState(0)
-
-  const container = {
-    hidden: { opacity: 0 },
-    visible: (i = 1) => ({
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.12,
-        delay: 2.5,
-        delayChildren: 0.04 * i,
-      },
-    }),
-  }
-
-  useEffect(() => {
-    const shuffleText = setInterval(() => {
-      setSelectedTextIndex(
-        selectedTextIndex >= textList.length - 1 ? 0 : selectedTextIndex + 1
-      )
-    }, 7000)
-
-    return () => {
-      clearInterval(shuffleText)
-    }
-  }, [selectedTextIndex])
-
   return (
-    <motion.div
-      className={`text-center ${className}`}
-      variants={container}
-      initial="hidden"
-      animate="visible"
-    >
-      <span className="inline-block animate-bounce duration-1000">
-        {textList[selectedTextIndex]}
-      </span>
-    </motion.div>
+    <span className={`inline-block duration-1000 ${className} `}>
+      <Typewriter
+        options={{
+          strings: textList,
+          autoStart: true,
+          loop: true,
+        }}
+      />
+    </span>
   )
 }
 

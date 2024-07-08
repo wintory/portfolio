@@ -24,6 +24,7 @@ const ImageProfile: FC<ImageProfileProps> = ({
       src={imagePath}
       alt={alt || ''}
       width={width}
+      priority
       height={height}
     />
   )

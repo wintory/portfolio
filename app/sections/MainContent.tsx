@@ -1,9 +1,11 @@
+import { useEffect, useState } from 'react'
 import AnimatedTextCharacter from '../components/AnimateTextCharacter'
 import AnimateTextList from '../components/AnimateTextList'
 import ImageProfile from '../components/ImageProfile'
 import SocialMedia from '../components/SocialMedia'
 
 const MainContent = () => {
+  const [isShowTextList, setIsShowTextList] = useState<boolean>(false)
   const textList = [
     'JavaScript',
     'React',
@@ -11,6 +13,12 @@ const MainContent = () => {
     'Problem Solving',
     'People Management',
   ]
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsShowTextList(true)
+    }, 3000)
+  }, [])
 
   return (
     <div className="relative flex h-screen w-screen items-center justify-center text-xl sm:p-2 lg:max-h-[800px] lg:p-8">
@@ -28,10 +36,12 @@ const MainContent = () => {
             className="contents sm:text-sm md:text-xl"
             text="Senior front-end developer with a passion in"
           />
-          <AnimateTextList
-            className="flex w-[100%] items-end text-warning sm:justify-center sm:pt-2 sm:text-sm md:text-xl lg:justify-start lg:pl-2 lg:pt-0"
-            textList={textList}
-          />
+          {isShowTextList && (
+            <AnimateTextList
+              className="flex w-[100%] items-end text-warning sm:justify-center sm:pt-2 sm:text-sm md:text-xl lg:justify-start lg:pl-2 lg:pt-0"
+              textList={textList}
+            />
+          )}
         </div>
         <div className="pt-4">
           <div className="relative mb-4 w-[100%] sm:hidden lg:inline-flex">
