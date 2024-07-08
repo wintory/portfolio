@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { FC, useEffect, useState } from 'react'
 import AnimatedTextCharacter from '../components/AnimateTextCharacter'
 import AnimateTextList from '../components/AnimateTextList'
@@ -47,9 +48,15 @@ const MainContent: FC = () => {
           <div className="relative mb-4 w-[100%] sm:hidden lg:inline-flex">
             <SocialMedia />
           </div>
-          <button className="btn btn-outline btn-warning rounded-[0px] outline-yellow-50 sm:px-2 sm:text-sm md:text-lg lg:mt-8 lg:px-4">
-            Download Resume
-          </button>
+          <Link
+            href="https://drive.google.com/file/d/1-kagwWiF1p2dUyTkfQF6b0P3yV_FoQc3/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="btn btn-outline btn-warning rounded-[0px] outline-yellow-50 sm:px-2 sm:text-sm md:text-lg lg:mt-8 lg:px-4">
+              Download Resume
+            </button>
+          </Link>
         </div>
       </div>
       <ImageProfile
