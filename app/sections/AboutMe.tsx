@@ -7,9 +7,9 @@ const AboutMe: FC = () => {
   const expYear = new Date().getFullYear() - 2018
 
   return (
-    <div className="relative flex h-auto justify-center bg-white">
+    <div className="relative flex h-auto justify-center bg-slate-100">
       <div className="relative grid h-auto w-screen items-center justify-center text-xl text-black sm:grid-cols-1 sm:p-2 lg:max-w-[1200px] lg:grid-cols-2 lg:p-8">
-        <div className="justify-center p-6 md:hidden lg:flex lg:justify-center">
+        <div className="items-center justify-center p-6 sm:hidden lg:flex">
           <Image
             src="/images/image.jpg"
             className="w-[400px]"
@@ -22,14 +22,14 @@ const AboutMe: FC = () => {
         <div className="sm:p-8 lg:p-4">
           <p className="underline lg:text-3xl">About Me</p>
           <br />
-          <span className="lg:text-xl">
+          <span className="sm:text-sm md:text-lg lg:text-xl">
             I am a passionate and experienced Front-End Developer with over{' '}
             {expYear} years of experience in creating dynamic and user-friendly
             web applications.
           </span>
           <br />
           <br />
-          <span className="lg:text-xl">
+          <span className="sm:text-sm md:text-lg lg:text-xl">
             Currently, I am working at Start-up Tech Company, where I specialize
             in developing responsive, high-performance websites using the latest
             technologies and frameworks. My proficiency includes HTML, CSS,
@@ -37,7 +37,7 @@ const AboutMe: FC = () => {
           </span>
           <br />
           <br />
-          <span>
+          <span className="sm:text-sm md:text-lg lg:text-xl">
             In addition to my technical skills, I am a strong collaborator and
             communicator. I enjoy working closely with designers, back-end
             developers, and stakeholders to bring ideas to life. I am constantly
@@ -46,7 +46,7 @@ const AboutMe: FC = () => {
           </span>
           <br />
           <br />
-          <span className="lg:text-xl">
+          <span className="sm:text-sm md:text-lg lg:text-xl">
             Outside of work, I enjoy exploring new technologies, participating
             in coding challenges. In my free time, you can find me traveling,
             reading, watching movies, or playing video games.
