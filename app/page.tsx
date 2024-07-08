@@ -22,8 +22,10 @@ export default function Home() {
       `}</style>
       <ThemeProvider>
         <ParallaxProvider scrollAxis="horizontal">
-          <NavBar />
-          <MainContent />
+          <div className="flex items-center justify-center">
+            <NavBar />
+            <MainContent />
+          </div>
           {/* <BoyComponent /> */}
         </ParallaxProvider>
       </ThemeProvider>

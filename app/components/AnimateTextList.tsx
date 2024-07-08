@@ -27,14 +27,14 @@ const AnimateTextList: FC<AnimateTextProps> = ({
   useEffect(() => {
     const shuffleText = setInterval(() => {
       setSelectedTextIndex(
-        Math.floor(Math.random() * (textList.length - 0) + 0)
+        selectedTextIndex >= textList.length - 1 ? 0 : selectedTextIndex + 1
       )
     }, 7000)
 
     return () => {
       clearInterval(shuffleText)
     }
-  }, [])
+  }, [selectedTextIndex])
 
   return (
     <motion.div

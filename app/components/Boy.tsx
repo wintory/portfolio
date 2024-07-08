@@ -24,7 +24,7 @@ const MeshComponent = () => {
 
 const BoyComponent: FC = () => {
   return (
-    <div className="flex justify-center items-center h-full w-full z-0">
+    <div className="z-0 flex h-full w-full items-center justify-center">
       <Suspense fallback={null}>
         <Canvas className="h-2xl w-2xl">
           <OrbitControls />
