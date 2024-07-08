@@ -4,6 +4,7 @@ import ThemeProvider from '@/providers/ThemeProvider'
 import { IBM_Plex_Sans } from 'next/font/google'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import NavBar from './components/NavBar'
+import AboutMe from './sections/AboutMe'
 import MainContent from './sections/MainContent'
 
 const sans = IBM_Plex_Sans({
@@ -26,7 +27,7 @@ export default function Home() {
             <NavBar />
             <MainContent />
           </div>
-          {/* <BoyComponent /> */}
+          <AboutMe />
         </ParallaxProvider>
       </ThemeProvider>
     </main>
