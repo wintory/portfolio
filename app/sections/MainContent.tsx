@@ -1,17 +1,25 @@
+import { motion, useScroll, useTransform } from 'framer-motion'
 import Link from 'next/link'
-import { FC, useEffect, useState } from 'react'
+import { FC, useEffect, useRef, useState } from 'react'
 import AnimatedTextCharacter from '../components/AnimateTextCharacter'
 import AnimateTextList from '../components/AnimateTextList'
 import ImageProfile from '../components/ImageProfile'
 import SocialMedia from '../components/SocialMedia'
 
 const MainContent: FC = () => {
+  const ref = useRef(null)
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start start', 'end start'],
+  })
+  const bgScrollY = useTransform(scrollYProgress, [0, 3], ['0%', '100%'])
+  const imgScrollY = useTransform(scrollYProgress, [0, 3], ['0%', '100%'])
   const [isShowTextList, setIsShowTextList] = useState<boolean>(false)
   const textList = [
-    // 'JavaScript',
-    // 'React',
+    'JavaScript',
+    'React',
     'Web Development',
-    // 'Problem Solving',
+    'Problem Solving',
     'People Management',
   ]
 
@@ -22,8 +30,14 @@ const MainContent: FC = () => {
   }, [])
 
   return (
-    <div className="relative flex h-screen w-screen items-center justify-center text-xl sm:p-2 lg:max-h-[600px] lg:p-8">
-      <div className="sm:p-4 sm:text-center lg:min-w-[600px] lg:text-left">
+    <div
+      ref={ref}
+      className="relative flex h-screen w-screen items-center justify-center text-xl sm:p-2 lg:max-h-[650px] lg:p-8"
+    >
+      <motion.div
+        style={{ y: bgScrollY }}
+        className="sm:p-4 sm:text-center lg:min-w-[650px] lg:text-left"
+      >
         <AnimatedTextCharacter
           className="text-bold mb-2 sm:text-sm md:text-lg lg:pr-1"
           text="Hello there 👋 I'm"
@@ -49,7 +63,7 @@ const MainContent: FC = () => {
             <SocialMedia />
           </div>
           <Link
-            href="https://drive.google.com/file/d/1-kagwWiF1p2dUyTkfQF6b0P3yV_FoQc3/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1iYmRfODh9EXB6R2tg-3wKCr8CCHg3aVR/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -58,13 +72,18 @@ const MainContent: FC = () => {
             </button>
           </Link>
         </div>
-      </div>
-      <ImageProfile
-        imagePath="/images/profile-pic.png"
-        className="] absolute sm:absolute sm:bottom-[-80px] sm:h-[40%] sm:w-auto lg:relative lg:bottom-0 lg:h-auto lg:w-[370px] lg:rounded-full"
-        width={600}
-        height={600}
-      />
+      </motion.div>
+      <motion.div
+        className="absolute z-[-1] sm:absolute sm:bottom-[-130px] sm:w-auto lg:relative lg:bottom-0 lg:h-auto"
+        style={{ y: imgScrollY }}
+      >
+        <ImageProfile
+          imagePath="/images/profile-pic.png"
+          className="sm:w-[350px] md:w-[500px] lg:rounded-full"
+          width={400}
+          height={400}
+        />
+      </motion.div>
     </div>
   )
 }
