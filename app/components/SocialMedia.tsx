@@ -17,7 +17,7 @@ const SocialMedia = () => {
         <Image
           src={GithubLogo}
           alt="Github Logo"
-          className="cursor-pointer"
+          className="cursor-pointer sm:h-[24px] sm:w-[24px] lg:h-[36px] lg:w-[36px]"
           width={36}
           height={36}
         />
@@ -32,7 +32,7 @@ const SocialMedia = () => {
         <Image
           src={LinkedinLogo}
           alt="Linkedin Logo"
-          className="cursor-pointer"
+          className="cursor-pointer sm:h-[24px] sm:w-[24px] lg:h-[36px] lg:w-[36px]"
           width={36}
           height={36}
         />
@@ -47,7 +47,7 @@ const SocialMedia = () => {
         <Image
           src={GalleryLogo}
           alt="Gallerry Logo"
-          className="cursor-pointer"
+          className="cursor-pointer sm:h-[26px] sm:w-[26px] lg:h-[38px] lg:w-[38px]"
           width={38}
           height={38}
         />
