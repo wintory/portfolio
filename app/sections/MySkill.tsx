@@ -7,6 +7,7 @@ const MySkill: FC = () => {
   return (
     <div
       ref={ref}
+      id="skill"
       className="relative flex h-[1200px] justify-center"
       style={{
         backgroundImage:

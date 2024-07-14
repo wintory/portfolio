@@ -20,6 +20,7 @@ const AboutMe: FC = () => {
   return (
     <div
       ref={ref}
+      id="about-me"
       className="relative inset-0 z-0 flex h-auto justify-center sm:p-8"
       style={{
         backgroundImage: 'linear-gradient(to top, #dfe9f3 0%, white 100%);',
