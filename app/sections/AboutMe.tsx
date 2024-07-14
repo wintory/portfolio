@@ -8,7 +8,6 @@ import { START_WORK_YEAR } from '../constants/common'
 
 const AboutMe: FC = () => {
   const ref = useRef(null)
-  const skillRef = useRef(null)
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -16,7 +15,6 @@ const AboutMe: FC = () => {
   })
   const textScrollY = useTransform(scrollYProgress, [0, 1], ['0%', '100%'])
   const imageScrollY = useTransform(scrollYProgress, [0, 1], ['0%', '75%'])
-  const skillScrollY = useTransform(scrollYProgress, [0, 1], ['0%', '100%'])
   const expYear = new Date().getFullYear() - START_WORK_YEAR
 
   return (

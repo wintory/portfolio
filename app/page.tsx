@@ -7,6 +7,7 @@ import NavBar from './components/NavBar'
 import AboutMe from './sections/AboutMe'
 import Footer from './sections/Footer'
 import MainContent from './sections/MainContent'
+import MySkill from './sections/MySkill'
 
 const sans = IBM_Plex_Sans({
   weight: ['400'],
@@ -29,6 +30,7 @@ export default function Home() {
             <MainContent />
           </div>
           <AboutMe />
+          <MySkill />
           <Footer />
         </main>
       </ParallaxProvider>
