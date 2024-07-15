@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const NavBar = () => {
   return (
-    <div className="drawer absolute left-0 top-0 z-[100] flex max-w-[1200px] md:px-[24px] lg:left-[50%] lg:top-2 lg:w-[100%] lg:translate-x-[-50%] lg:px-[32px]">
+    <div className="drawer absolute left-0 top-0 z-[100] flex max-w-[1200px] sm:hidden md:px-[24px] lg:left-[50%] lg:top-2 lg:block lg:w-[100%] lg:translate-x-[-50%] lg:px-[32px]">
       <input id="menu" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex w-[100%] flex-col justify-between">
         <div className="navbar">
