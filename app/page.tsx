@@ -33,6 +33,7 @@ export default function Home() {
           <AboutMe />
           <MySkill />
           <Experience />
+          {/* <Gallery /> */}
           <Footer />
         </main>
       </ParallaxProvider>
