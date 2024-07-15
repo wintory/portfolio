@@ -65,10 +65,10 @@ const Experience: FC = () => {
       id="experience"
       className="relative grid w-screen justify-center bg-gradient-to-r from-[#dfe9f3] to-white sm:py-[32px] sm:pl-[48px] sm:pr-[32px] lg:px-[32px] lg:py-[100px]"
     >
-      <p className="relative my-4 text-black underline sm:text-lg sm:underline md:mx-8 lg:text-3xl">
+      <p className="relative my-4 text-black underline sm:text-lg sm:underline md:text-3xl">
         Experience
       </p>
-      <div className="relative flex h-full max-w-[1200px] justify-center">
+      <div className="relative z-20 flex h-full max-w-[1200px] justify-center">
         <ol className="relative border-s border-gray-200 dark:border-gray-700">
           {content.map(({ title, date, description, isPresent }) => (
             <li className="mb-10 ms-8 md:p-4">
@@ -108,6 +108,8 @@ const Experience: FC = () => {
           ))}
         </ol>
       </div>
+      <div className="z-1 absolute bottom-[100px] right-[-300px] h-[800px] w-[800px] rounded-full bg-warning opacity-20" />
+      <div className="z-2 absolute bottom-[200px] right-[-300px] h-[600px] w-[600px] rounded-full bg-white" />
     </div>
   )
 }
