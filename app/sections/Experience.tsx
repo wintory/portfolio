@@ -63,7 +63,7 @@ const Experience: FC = () => {
   return (
     <div
       id="experience"
-      className="relative grid w-screen justify-center bg-gradient-to-r from-[#dfe9f3] to-white sm:py-[32px] sm:pl-[48px] sm:pr-[32px] lg:px-[32px] lg:py-[100px]"
+      className="relative grid w-screen justify-center bg-gradient-to-r from-[#dfe9f3] to-white sm:py-[32px] sm:pl-[48px] sm:pr-[32px] lg:px-[60px] lg:py-[100px]"
     >
       <p className="relative my-4 text-black underline sm:text-lg sm:underline md:text-3xl">
         Experience
@@ -108,8 +108,10 @@ const Experience: FC = () => {
           ))}
         </ol>
       </div>
-      <div className="z-1 absolute bottom-[100px] right-[-300px] h-[800px] w-[800px] rounded-full bg-warning opacity-20" />
-      <div className="z-2 absolute bottom-[200px] right-[-300px] h-[600px] w-[600px] rounded-full bg-white" />
+      <div className="z-1 absolute bottom-[200px] right-0 h-[50px] bg-[#6934b3] opacity-20 sm:hidden md:block md:w-[200px] lg:w-[400px]" />
+      <div className="z-1 absolute bottom-[100px] right-0 h-[50px] bg-warning opacity-20 sm:hidden md:block md:w-[300px] lg:w-[800px]" />
+      <div className="z-1 absolute left-0 top-[100px] h-[50px] w-[300px] bg-warning opacity-20 sm:hidden lg:block" />
+      <div className="z-1 absolute left-[-100px] top-[200px] h-[50px] w-[150px] bg-[#6934b3] opacity-20 sm:hidden lg:block" />
     </div>
   )
 }
