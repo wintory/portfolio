@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 const NavBar = () => {
   return (
-    <div className="drawer absolute left-0 top-0 z-[100] flex max-w-[1200px] p-3 lg:left-[50%] lg:top-2 lg:w-[100%] lg:translate-x-[-50%]">
+    <div className="drawer absolute left-0 top-0 z-[100] flex max-w-[1200px] md:px-[24px] lg:left-[50%] lg:top-2 lg:w-[100%] lg:translate-x-[-50%] lg:px-[32px]">
       <input id="menu" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex w-[100%] flex-col justify-between">
         <div className="navbar">
@@ -39,91 +40,48 @@ const NavBar = () => {
           <div className="hidden flex-none lg:block">
             <ul className="text-bold menu menu-horizontal text-xl">
               <li>
-                <a
+                <Link
                   className="hover:rounded-none focus:rounded-none"
                   href="#about-me"
                 >
                   About me
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="hover:rounded-none focus:rounded-none"
                   href="#skill"
                 >
                   Skill
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="hover:rounded-none focus:rounded-none"
                   href="#experience"
                 >
                   Experience
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="hover:rounded-none focus:rounded-none"
                   href="#work"
                 >
                   Work
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="hover:rounded-none focus:rounded-none"
                   href="#gallery"
                 >
                   Gallery
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
-      </div>
-      <div className="drawer-side">
-        <label
-          htmlFor="menu"
-          aria-label="close sidebar"
-          className="drawer-overlay"
-        ></label>
-        <ul className="menu min-h-full w-80 bg-base-200 p-4 text-lg">
-          <li>
-            <a
-              className="hover:rounded-none focus:rounded-none"
-              href="#about-me"
-            >
-              About me
-            </a>
-          </li>
-          <li>
-            <a className="hover:rounded-none focus:rounded-none" href="#skill">
-              Skill
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:rounded-none focus:rounded-none"
-              href="#experience"
-            >
-              Experience
-            </a>
-          </li>
-          <li>
-            <a className="hover:rounded-none focus:rounded-none" href="#work">
-              Work
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:rounded-none focus:rounded-none"
-              href="#gallery"
-            >
-              Gallery
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   )

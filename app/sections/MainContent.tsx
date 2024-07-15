@@ -32,7 +32,7 @@ const MainContent: FC = () => {
   return (
     <div
       ref={ref}
-      className="relative flex h-screen w-screen items-center justify-center text-xl sm:p-2 lg:max-h-[800px] lg:p-8"
+      className="relative flex h-screen w-screen items-center justify-center text-xl sm:p-2 lg:max-h-[650px] lg:p-8"
     >
       <motion.div
         style={{ y: bgScrollY }}
@@ -79,7 +79,7 @@ const MainContent: FC = () => {
       >
         <ImageProfile
           imagePath="/images/profile-pic.png"
-          className="sm:w-[350px] md:w-[500px] lg:rounded-full"
+          className="sm:w-[350px] md:w-[400px] lg:rounded-full"
           width={400}
           height={400}
         />
