@@ -8,7 +8,7 @@ const MySkill: FC = () => {
     target: ref,
     offset: ['start start', 'end start'],
   })
-  const textScrollY = useTransform(scrollYProgress, [0, 4], ['0%', '70%'])
+  const textScrollY = useTransform(scrollYProgress, [0, 4], ['0%', '100%'])
 
   return (
     <div ref={ref} id="skill">
@@ -16,14 +16,14 @@ const MySkill: FC = () => {
         style={{
           y: textScrollY,
           backgroundImage:
-            'linear-gradient(90deg,rgba(5, 5, 5, 1) 0%,rgba(67, 67, 67, 1) 73%);',
+            'linear-gradient(90deg,rgba(5, 5, 5, 1) 0%,rgba(67, 67, 67, 1) 73%)',
         }}
-        className="relative h-full justify-center p-6 sm:hidden lg:grid"
+        className="relative h-full justify-center p-[100px] sm:hidden lg:grid"
       >
         <div className="absolute bottom-[100px] left-0 z-0 h-[300px] w-[300px] rotate-45 bg-warning opacity-20" />
         <div className="absolute right-0 top-[100px] z-0 h-[300px] w-[300px] rotate-45 bg-[#6934b3] opacity-20" />
         <div className="relflex flex w-full justify-center sm:py-2 md:py-4 lg:max-w-[1200px]">
-          <p className="font-bold underline sm:text-xl sm:text-white sm:underline lg:text-2xl lg:text-warning">
+          <p className="font-bold underline sm:text-xl sm:text-white sm:underline lg:text-3xl lg:text-warning">
             Skillset
           </p>
         </div>
@@ -97,7 +97,6 @@ const MySkill: FC = () => {
       </motion.div>
       <motion.div
         style={{
-          y: textScrollY,
           backgroundImage:
             'linear-gradient(90deg,rgba(5, 5, 5, 1) 0%,rgba(67, 67, 67, 1) 73%);',
         }}

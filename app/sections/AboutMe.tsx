@@ -23,7 +23,7 @@ const AboutMe: FC = () => {
         id="about-me"
         className="relative flex h-full justify-center bg-gradient-to-r from-[#dfe9f3] to-white sm:p-8"
       >
-        <div className="relative grid h-full w-screen items-center justify-center text-xl text-black sm:max-h-[800px] sm:grid-cols-1 sm:p-2 lg:max-w-[1200px] lg:grid-cols-2 lg:p-8">
+        <div className="relative grid h-full w-screen items-center justify-center text-xl text-black sm:max-h-[1000px] sm:grid-cols-1 sm:p-2 lg:max-w-[1200px] lg:grid-cols-2 lg:p-8">
           <motion.div
             style={{ y: imageScrollY }}
             className="mask mask-parallelogram-4 items-center justify-center p-6 sm:hidden lg:flex"

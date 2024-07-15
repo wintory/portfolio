@@ -41,7 +41,7 @@ const NavBar = () => {
             <ul className="text-bold menu menu-horizontal text-xl">
               <li>
                 <Link
-                  className="hover:rounded-none focus:rounded-none"
+                  className="hover:rounded-none hover:bg-transparent focus:rounded-none focus:bg-transparent active:bg-transparent"
                   href="#about-me"
                 >
                   About me
@@ -49,7 +49,7 @@ const NavBar = () => {
               </li>
               <li>
                 <Link
-                  className="hover:rounded-none focus:rounded-none"
+                  className="hover:rounded-none hover:bg-transparent focus:rounded-none focus:bg-transparent active:bg-transparent"
                   href="#skill"
                 >
                   Skill
@@ -57,7 +57,7 @@ const NavBar = () => {
               </li>
               <li>
                 <Link
-                  className="hover:rounded-none focus:rounded-none"
+                  className="hover:rounded-none hover:bg-transparent focus:rounded-none focus:bg-transparent active:bg-transparent"
                   href="#experience"
                 >
                   Experience
@@ -65,7 +65,7 @@ const NavBar = () => {
               </li>
               <li>
                 <Link
-                  className="hover:rounded-none focus:rounded-none"
+                  className="hover:rounded-none hover:bg-transparent focus:rounded-none focus:bg-transparent active:bg-transparent"
                   href="#work"
                 >
                   Work
@@ -73,7 +73,7 @@ const NavBar = () => {
               </li>
               <li>
                 <Link
-                  className="hover:rounded-none focus:rounded-none"
+                  className="hover:rounded-none hover:bg-transparent focus:rounded-none focus:bg-transparent active:bg-transparent"
                   href="#gallery"
                 >
                   Gallery
