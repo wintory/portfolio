@@ -31,6 +31,7 @@ export default function Home() {
           </div>
           <AboutMe />
           <MySkill />
+          {/* <Experience /> */}
           <Footer />
         </main>
       </ParallaxProvider>
