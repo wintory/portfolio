@@ -31,7 +31,7 @@ const ImageScrollHorizontal: FC<ParallaxProps> = ({ images }) => {
           >
             <div className="box-border flex h-full flex-col items-center justify-center">
               <img
-                src={`/images/${image}`}
+                src={image}
                 alt={`Image ${index + 1}`}
                 className="image w-auto sm:h-[20px] sm:px-4 md:h-[40px] md:px-8 xl:h-[60px]"
               />

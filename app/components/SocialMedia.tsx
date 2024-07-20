@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import GalleryLogo from '../../public/images/gallery-logo.svg'
-import GithubLogo from '../../public/images/github-logo.svg'
-import LinkedinLogo from '../../public/images/linkedin-logo.svg'
+import GalleryLogo from '../../public/images/logos/gallery-logo.svg'
+import GithubLogo from '../../public/images/logos/github-logo.svg'
+import LinkedinLogo from '../../public/images/logos/linkedin-logo.svg'
 
 const SocialMedia = () => {
   return (

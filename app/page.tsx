@@ -8,6 +8,7 @@ import NavBar from './components/NavBar'
 import AboutMe from './sections/AboutMe'
 import Experience from './sections/Experience'
 import Footer from './sections/Footer'
+import Internship from './sections/InternShip'
 import MainContent from './sections/MainContent'
 import MySkill from './sections/MySkill'
 
@@ -23,7 +24,10 @@ export default function Home() {
     <AboutMe />,
     <MySkill />,
     <Experience />,
+    <Internship />,
+    <Footer />,
   ]
+
   return (
     <ThemeProvider>
       <ParallaxProvider scrollAxis="vertical">
@@ -51,7 +55,6 @@ export default function Home() {
               {content}
             </motion.div>
           ))}
-          <Footer />
         </main>
       </ParallaxProvider>
     </ThemeProvider>
