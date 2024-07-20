@@ -1,8 +1,14 @@
-import Image from 'next/image'
 import { FC } from 'react'
-import AnimationScrollText from '../components/AnimationScrollText'
+import ImageScrollHorizontal from '../components/ImageScrollHorizontal'
 
 const Experience: FC = () => {
+  const scrollImages = [
+    'appman-logo.png',
+    'deeple-logo.png',
+    'zipmex-logo.png',
+    'zilo-logo.png',
+    'true-academy-logo.png',
+  ]
   const content: {
     title: string
     date: string
@@ -59,101 +65,72 @@ const Experience: FC = () => {
       title: 'True Academy Project (Internship)',
       date: 'May - July 2017',
       isPresent: false,
-      description: [],
+      description: [
+        'Maintain to use the internal application for True Corp employees.',
+      ],
     },
   ]
   return (
-    <div
-      id="experience"
-      className="relative grid w-screen justify-center bg-gradient-to-r from-[#dfe9f3] to-white sm:py-[32px] sm:pl-[48px] sm:pr-[32px] lg:px-[60px] lg:py-[100px]"
-    >
-      <AnimationScrollText>
-        <>
-          <div className="h-[60px] w-[200px]">
-            <Image
-              height={200}
-              width={400}
-              src="/images/appman-logo.png"
-              alt={'appman-logo'}
-            />
-          </div>
-          <div className="h-[60px] w-[200px]">
-            <Image
-              height={200}
-              width={400}
-              src="/images/deeple-logo.png"
-              alt={'deeple-logo'}
-            />
-          </div>
-          <div className="h-[60px] w-[200px]">
-            <Image
-              height={200}
-              width={400}
-              src="/images/zipmex-logo.png"
-              alt={'zipmex-logo'}
-            />
-          </div>
-          <div className="h-[60px] w-[200px]">
-            <Image
-              height={200}
-              width={400}
-              src="/images/zilo-logo.png"
-              alt={'zilo-logo'}
-            />
-          </div>
-        </>
-      </AnimationScrollText>
-      <p className="relative my-4 text-black underline sm:text-lg sm:underline md:text-3xl">
-        Experience
-      </p>
-      <div className="relative z-20 flex h-full max-w-[1200px] justify-center">
-        <ol className="relative border-s border-gray-200 dark:border-gray-700">
-          {content.map(({ title, date, description, isPresent }) => (
-            <li key={title} className="mb-10 ms-8 md:p-4">
-              <span className="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-8 ring-white dark:bg-blue-900 dark:ring-gray-900">
-                <svg
-                  className="h-2.5 w-2.5 text-blue-800 dark:text-blue-300"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                </svg>
-              </span>
-              <h3 className="mb-1 flex items-center font-semibold text-gray-900 sm:text-lg md:text-xl dark:text-black">
-                {title}
-                {isPresent && (
-                  <span className="me-2 ms-3 rounded-none bg-[#6934b3] px-2.5 py-0.5 text-sm font-medium sm:hidden md:block dark:text-white">
-                    Present
-                  </span>
+    <>
+      <div
+        id="experience"
+        className="relative grid w-screen justify-center bg-gradient-to-r from-[#dfe9f3] to-white sm:pl-[48px] sm:pr-[32px] sm:pt-[32px] lg:px-[40px] lg:pt-[100px]"
+      >
+        <p className="relative my-4 text-black underline sm:text-lg sm:underline md:text-3xl">
+          Experience
+        </p>
+        <div className="relative z-20 flex h-full max-w-[1200px] justify-center">
+          <ol className="relative border-s border-gray-200 dark:border-gray-700">
+            {content.map(({ title, date, description, isPresent }) => (
+              <li key={title} className="mb-10 ms-8 md:p-4">
+                <span className="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-8 ring-white dark:bg-blue-900 dark:ring-gray-900">
+                  <svg
+                    className="h-2.5 w-2.5 text-blue-800 dark:text-blue-300"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                  </svg>
+                </span>
+                <h3 className="mb-1 flex items-center font-semibold text-gray-900 sm:text-lg md:text-xl dark:text-black">
+                  {title}
+                  {isPresent && (
+                    <span className="me-2 ms-3 rounded-none bg-[#6934b3] px-2.5 py-0.5 text-sm font-medium sm:hidden md:block dark:text-white">
+                      Present
+                    </span>
+                  )}
+                </h3>
+                <time className="mb-2 block font-normal leading-none text-black opacity-60 sm:text-sm">
+                  {date}
+                </time>
+                <br />
+                {description.length > 0 && (
+                  <ul>
+                    {description.map((val) => (
+                      <li
+                        key={val}
+                        className="list-disc text-black sm:text-sm md:text-lg"
+                      >
+                        {val}
+                      </li>
+                    ))}
+                  </ul>
                 )}
-              </h3>
-              <time className="mb-2 block font-normal leading-none text-black opacity-60 sm:text-sm">
-                {date}
-              </time>
-              <br />
-              {description.length > 0 && (
-                <ul>
-                  {description.map((val) => (
-                    <li
-                      key={val}
-                      className="list-disc text-black sm:text-sm md:text-lg"
-                    >
-                      {val}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </ol>
+              </li>
+            ))}
+          </ol>
+        </div>
+        <div className="z-1 absolute bottom-[200px] right-0 h-[50px] bg-[#6934b3] opacity-20 sm:hidden md:block md:w-[200px] lg:w-[400px]" />
+        <div className="z-1 absolute bottom-[100px] right-0 h-[50px] bg-warning opacity-20 sm:hidden md:block md:w-[300px] lg:w-[800px]" />
+        <div className="z-1 absolute left-0 top-[100px] h-[50px] w-[300px] bg-warning opacity-20 sm:hidden lg:block" />
+        <div className="z-1 absolute left-[-100px] top-[200px] h-[50px] w-[150px] bg-[#6934b3] opacity-20 sm:hidden lg:block" />
       </div>
-      <div className="z-1 absolute bottom-[200px] right-0 h-[50px] bg-[#6934b3] opacity-20 sm:hidden md:block md:w-[200px] lg:w-[400px]" />
-      <div className="z-1 absolute bottom-[100px] right-0 h-[50px] bg-warning opacity-20 sm:hidden md:block md:w-[300px] lg:w-[800px]" />
-      <div className="z-1 absolute left-0 top-[100px] h-[50px] w-[300px] bg-warning opacity-20 sm:hidden lg:block" />
-      <div className="z-1 absolute left-[-100px] top-[200px] h-[50px] w-[150px] bg-[#6934b3] opacity-20 sm:hidden lg:block" />
-    </div>
+      <div className="relative w-full justify-center bg-gradient-to-r from-[#dfe9f3] to-white sm:inline-flex sm:py-[32px]">
+        <ImageScrollHorizontal images={scrollImages} />
+      </div>
+    </>
   )
 }
 

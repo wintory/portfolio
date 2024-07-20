@@ -104,7 +104,7 @@ const MySkill: FC = () => {
       >
         <div className="relative sm:p-0 md:p-8">
           <div className="absolute bottom-[100px] left-[-100px] z-0 h-[150px] w-[150px] rotate-45 bg-warning opacity-20" />
-          <div className="absolute right-[-100px] top-[300px] z-0 h-[150px] w-[150px] rotate-45 bg-[#6934b3] opacity-20" />
+          <div className="absolute right-[-100px] top-[300px] z-0 h-[150px] w-[150px] rotate-45 bg-[#6934b3] opacity-20 sm:hidden lg:flex" />
           <div className="w-[150px] rounded-full lg:absolute lg:left-[-140px] lg:flex lg:h-[150px] lg:items-center lg:justify-center lg:bg-black lg:text-white">
             <p className="text-warning sm:text-lg sm:underline md:text-3xl lg:no-underline">
               Skillset
