@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import { FC } from 'react'
+import AnimationScrollText from '../components/AnimationScrollText'
 
 const Experience: FC = () => {
   const content: {
@@ -65,13 +67,49 @@ const Experience: FC = () => {
       id="experience"
       className="relative grid w-screen justify-center bg-gradient-to-r from-[#dfe9f3] to-white sm:py-[32px] sm:pl-[48px] sm:pr-[32px] lg:px-[60px] lg:py-[100px]"
     >
+      <AnimationScrollText>
+        <>
+          <div className="h-[60px] w-[200px]">
+            <Image
+              height={200}
+              width={400}
+              src="/images/appman-logo.png"
+              alt={'appman-logo'}
+            />
+          </div>
+          <div className="h-[60px] w-[200px]">
+            <Image
+              height={200}
+              width={400}
+              src="/images/deeple-logo.png"
+              alt={'deeple-logo'}
+            />
+          </div>
+          <div className="h-[60px] w-[200px]">
+            <Image
+              height={200}
+              width={400}
+              src="/images/zipmex-logo.png"
+              alt={'zipmex-logo'}
+            />
+          </div>
+          <div className="h-[60px] w-[200px]">
+            <Image
+              height={200}
+              width={400}
+              src="/images/zilo-logo.png"
+              alt={'zilo-logo'}
+            />
+          </div>
+        </>
+      </AnimationScrollText>
       <p className="relative my-4 text-black underline sm:text-lg sm:underline md:text-3xl">
         Experience
       </p>
       <div className="relative z-20 flex h-full max-w-[1200px] justify-center">
         <ol className="relative border-s border-gray-200 dark:border-gray-700">
           {content.map(({ title, date, description, isPresent }) => (
-            <li className="mb-10 ms-8 md:p-4">
+            <li key={title} className="mb-10 ms-8 md:p-4">
               <span className="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 ring-8 ring-white dark:bg-blue-900 dark:ring-gray-900">
                 <svg
                   className="h-2.5 w-2.5 text-blue-800 dark:text-blue-300"
@@ -98,7 +136,10 @@ const Experience: FC = () => {
               {description.length > 0 && (
                 <ul>
                   {description.map((val) => (
-                    <li className="list-disc text-black sm:text-sm md:text-lg">
+                    <li
+                      key={val}
+                      className="list-disc text-black sm:text-sm md:text-lg"
+                    >
                       {val}
                     </li>
                   ))}

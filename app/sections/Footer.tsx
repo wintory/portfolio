@@ -27,7 +27,7 @@ const Footer: FC = () => {
       <SocialMedia />
       <aside>
         <p className="font-thin sm:text-xs md:text-sm">
-          {new Date().getFullYear()} Thanapol Sakullertphasuk's Portfolio.
+          {new Date().getFullYear()} Thanapol Sakullertphasuk&apos;s Portfolio.
           Thailand © All right reserved.
         </p>
       </aside>
