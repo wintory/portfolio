@@ -1,6 +1,7 @@
 'use client'
 
 import ThemeProvider from '@/providers/ThemeProvider'
+import { motion } from 'framer-motion'
 import { IBM_Plex_Sans } from 'next/font/google'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import NavBar from './components/NavBar'
@@ -16,6 +17,13 @@ const sans = IBM_Plex_Sans({
 })
 
 export default function Home() {
+  const contents = [
+    <NavBar />,
+    <MainContent />,
+    <AboutMe />,
+    <MySkill />,
+    <Experience />,
+  ]
   return (
     <ThemeProvider>
       <ParallaxProvider scrollAxis="vertical">
@@ -26,14 +34,23 @@ export default function Home() {
               font-family: var(--font-google-ibm-plex-sans);
             }
           `}</style>
-          <div className="flex items-center justify-center">
-            <NavBar />
-            <MainContent />
-          </div>
-          <AboutMe />
-          <MySkill />
-          <Experience />
-          {/* <Gallery /> */}
+          {contents.map((content) => (
+            <motion.div
+              initial={{
+                opacity: 0,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1,
+                },
+              }}
+              viewport={{ once: true }}
+            >
+              {content}
+            </motion.div>
+          ))}
           <Footer />
         </main>
       </ParallaxProvider>

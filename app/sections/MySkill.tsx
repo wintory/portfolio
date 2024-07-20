@@ -20,8 +20,8 @@ const MySkill: FC = () => {
         }}
         className="relative h-full justify-center p-[100px] sm:hidden lg:grid"
       >
-        <div className="absolute bottom-[100px] left-0 z-0 h-[300px] w-[300px] rotate-45 bg-warning opacity-20" />
-        <div className="absolute right-0 top-[100px] z-0 h-[300px] w-[300px] rotate-45 bg-[#6934b3] opacity-20" />
+        <div className="absolute bottom-[100px] left-[100px] z-0 h-[300px] w-[300px] rotate-45 bg-warning opacity-20" />
+        <div className="absolute right-[100px] top-[100px] z-0 h-[300px] w-[300px] rotate-45 bg-[#6934b3] opacity-20" />
         <div className="relflex flex w-full justify-center sm:py-2 md:py-4 lg:max-w-[1200px]">
           <p className="font-bold underline sm:text-xl sm:text-white sm:underline lg:text-3xl lg:text-warning">
             Skillset
@@ -104,7 +104,7 @@ const MySkill: FC = () => {
       >
         <div className="relative sm:p-0 md:p-8">
           <div className="absolute bottom-[100px] left-[-100px] z-0 h-[150px] w-[150px] rotate-45 bg-warning opacity-20" />
-          <div className="absolute right-[-100px] top-[300px] z-0 h-[150px] w-[150px] rotate-45 bg-[#6934b3] opacity-20 sm:hidden lg:flex" />
+          <div className="absolute right-[100px] top-[300px] z-0 h-[150px] w-[150px] rotate-45 bg-[#6934b3] opacity-20 sm:hidden lg:flex" />
           <div className="w-[150px] rounded-full lg:absolute lg:left-[-140px] lg:flex lg:h-[150px] lg:items-center lg:justify-center lg:bg-black lg:text-white">
             <p className="text-warning sm:text-lg sm:underline md:text-3xl lg:no-underline">
               Skillset

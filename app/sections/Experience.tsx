@@ -1,3 +1,6 @@
+'use Client'
+
+import { motion } from 'framer-motion'
 import { FC } from 'react'
 import ImageScrollHorizontal from '../components/ImageScrollHorizontal'
 
@@ -67,6 +70,7 @@ const Experience: FC = () => {
       isPresent: false,
       description: [
         'Maintain to use the internal application for True Corp employees.',
+        'Enhanced internal application performance to improve user experience.',
       ],
     },
   ]
@@ -94,30 +98,45 @@ const Experience: FC = () => {
                     <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                   </svg>
                 </span>
-                <h3 className="mb-1 flex items-center font-semibold text-gray-900 sm:text-lg md:text-xl dark:text-black">
-                  {title}
-                  {isPresent && (
-                    <span className="me-2 ms-3 rounded-none bg-[#6934b3] px-2.5 py-0.5 text-sm font-medium sm:hidden md:block dark:text-white">
-                      Present
-                    </span>
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    x: -50,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0,
+                    transition: {
+                      duration: 1,
+                    },
+                  }}
+                  viewport={{ once: true }}
+                >
+                  <h3 className="mb-1 flex items-center font-semibold text-gray-900 sm:text-lg md:text-xl dark:text-black">
+                    {title}
+                    {isPresent && (
+                      <span className="me-2 ms-3 rounded-none bg-[#6934b3] px-2.5 py-0.5 text-sm font-medium sm:hidden md:block dark:text-white">
+                        Present
+                      </span>
+                    )}
+                  </h3>
+                  <time className="mb-2 block font-normal leading-none text-black opacity-60 sm:text-sm">
+                    {date}
+                  </time>
+                  <br />
+                  {description.length > 0 && (
+                    <ul>
+                      {description.map((val) => (
+                        <li
+                          key={val}
+                          className="list-disc text-black sm:text-sm md:text-lg"
+                        >
+                          {val}
+                        </li>
+                      ))}
+                    </ul>
                   )}
-                </h3>
-                <time className="mb-2 block font-normal leading-none text-black opacity-60 sm:text-sm">
-                  {date}
-                </time>
-                <br />
-                {description.length > 0 && (
-                  <ul>
-                    {description.map((val) => (
-                      <li
-                        key={val}
-                        className="list-disc text-black sm:text-sm md:text-lg"
-                      >
-                        {val}
-                      </li>
-                    ))}
-                  </ul>
-                )}
+                </motion.div>
               </li>
             ))}
           </ol>

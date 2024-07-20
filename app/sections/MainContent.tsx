@@ -51,12 +51,10 @@ const MainContent: FC = () => {
             className="contents sm:text-sm md:text-xl"
             text="Senior front-end developer with a passion in"
           />
-          {isShowTextList && (
-            <AnimateTextList
-              className="flex items-end text-warning sm:justify-center sm:pt-2 sm:text-sm md:justify-start md:pl-2 md:pt-0 md:text-lg"
-              textList={textList}
-            />
-          )}
+          <AnimateTextList
+            className="flex items-end text-warning sm:justify-center sm:pt-2 sm:text-sm md:justify-start md:pl-2 md:pt-0 md:text-lg"
+            textList={isShowTextList ? textList : []}
+          />
         </div>
         <div className="pt-4">
           <div className="relative mb-4 w-[100%] sm:hidden lg:inline-flex">
