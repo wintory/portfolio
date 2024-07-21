@@ -25,16 +25,16 @@ const MainContent: FC = () => {
     <div className="relative flex h-screen w-screen items-center justify-center text-xl sm:p-2 lg:max-h-[650px] lg:p-8">
       <div className="sm:p-4 sm:text-center lg:min-w-[650px] lg:text-left">
         <AnimatedTextCharacter
-          className="text-bold mb-2 sm:text-sm md:text-lg lg:pr-1"
+          className="text-bold mb-2 text-white sm:text-sm md:text-lg lg:pr-1"
           text="Hello there 👋 I'm"
         />
         <AnimatedTextCharacter
-          className="text-bold mb-2 sm:text-lg md:text-5xl lg:pr-1"
+          className="text-bold mb-2 text-white sm:text-lg md:text-5xl lg:pr-1"
           text="Thanapol Sakullertphasuk"
         />
         <div className="relative w-[100%] items-baseline md:inline-flex md:min-w-[600px]">
           <AnimatedTextCharacter
-            className="contents sm:text-sm md:text-xl"
+            className="contents text-white sm:text-sm md:text-xl"
             text="Senior front-end developer with a passion in"
           />
           <AnimateTextList
