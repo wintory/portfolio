@@ -35,7 +35,7 @@ const Internship: FC = () => {
             viewport={{ once: false }}
             className="sm:pb-4 md:pb-6"
           >
-            <h3 className="mb-1 flex items-center font-semibold text-gray-900 sm:text-lg md:text-xl dark:text-white">
+            <h3 className="mb-1 flex items-center font-semibold text-white sm:text-lg md:text-xl">
               True Academy Project
             </h3>
             <time className="mb-2 block font-normal leading-none text-white opacity-60 sm:text-sm">

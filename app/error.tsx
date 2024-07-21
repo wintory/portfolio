@@ -22,7 +22,7 @@ const ErrorBoundary: FC = () => {
             </p>
           </div>
 
-          <h3 className="mb-1 flex items-center pb-4 font-semibold text-gray-900 sm:text-sm md:text-xl dark:text-white">
+          <h3 className="mb-1 flex items-center pb-4 font-semibold text-white sm:text-sm md:text-xl">
             I apologize, but there appears to have been an unforeseen problem or
             maintenance on this portfolio. Please try refreshing the page or
             returning shortly.
