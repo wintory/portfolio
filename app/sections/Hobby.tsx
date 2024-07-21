@@ -38,8 +38,8 @@ const Gallery: FC = () => {
                 <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-4.jpg"
-                  width={60}
-                  height={60}
+                  width={400}
+                  height={400}
                   alt="gallery-4"
                 />
               </div>
@@ -47,8 +47,8 @@ const Gallery: FC = () => {
                 <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-6.jpg"
-                  width={60}
-                  height={60}
+                  width={400}
+                  height={400}
                   alt="gallery-6"
                 />
               </div>
@@ -56,8 +56,8 @@ const Gallery: FC = () => {
                 <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-8.jpg"
-                  width={60}
-                  height={60}
+                  width={400}
+                  height={400}
                   alt="gallery-8"
                 />
               </div>
@@ -68,8 +68,8 @@ const Gallery: FC = () => {
                 <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-1.jpg"
-                  width={60}
-                  height={60}
+                  width={400}
+                  height={400}
                   alt="gallery-1"
                 />
               </div>
@@ -77,8 +77,8 @@ const Gallery: FC = () => {
                 <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-5.jpg"
-                  width={60}
-                  height={60}
+                  width={400}
+                  height={400}
                   alt="gallery-5"
                 />
               </div>
@@ -86,8 +86,8 @@ const Gallery: FC = () => {
                 <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-14.jpg"
-                  width={60}
-                  height={60}
+                  width={400}
+                  height={400}
                   alt="gallery-14"
                 />
               </div>
@@ -98,8 +98,8 @@ const Gallery: FC = () => {
                 <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-3.jpg"
-                  width={60}
-                  height={60}
+                  width={400}
+                  height={400}
                   alt="gallery-3"
                 />
               </div>
@@ -107,8 +107,8 @@ const Gallery: FC = () => {
                 <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-7.jpg"
-                  width={60}
-                  height={60}
+                  width={400}
+                  height={400}
                   alt="gallery-7"
                 />
               </div>
@@ -116,8 +116,8 @@ const Gallery: FC = () => {
                 <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-15.jpg"
-                  width={60}
-                  height={60}
+                  width={400}
+                  height={400}
                   alt="gallery-15"
                 />
               </div>
@@ -128,8 +128,8 @@ const Gallery: FC = () => {
                 <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-16.jpg"
-                  width={60}
-                  height={60}
+                  width={400}
+                  height={400}
                   alt="gallery-16"
                 />
               </div>
@@ -137,8 +137,8 @@ const Gallery: FC = () => {
                 <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-18.jpg"
-                  width={60}
-                  height={60}
+                  width={400}
+                  height={400}
                   alt="gallery-18"
                 />
               </div>
@@ -146,8 +146,8 @@ const Gallery: FC = () => {
                 <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-17.jpg"
-                  width={60}
-                  height={60}
+                  width={400}
+                  height={400}
                   alt="gallery-17"
                 />
               </div>

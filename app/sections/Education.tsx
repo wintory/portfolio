@@ -103,8 +103,8 @@ const Education: FC = () => {
                 className="flex items-center justify-center sm:pt-8 lg:pt-0"
               >
                 <Image
-                  width={600}
-                  height={600}
+                  width={800}
+                  height={800}
                   src="/images/miletrav.jpg"
                   alt="/images/miletrav.jpg"
                 />
