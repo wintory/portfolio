@@ -1,24 +1,16 @@
 'use client'
 
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { FC, useRef } from 'react'
+import { FC } from 'react'
 import FlipCard from '../components/FlipCard'
 import { START_WORK_YEAR } from '../constants/common'
 
 const AboutMe: FC = () => {
-  const ref = useRef(null)
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ['start start', 'end start'],
-  })
-  const textScrollY = useTransform(scrollYProgress, [0, 3], ['0%', '75%'])
-  const imageScrollY = useTransform(scrollYProgress, [0, 3], ['0%', '75%'])
   const expYear = new Date().getFullYear() - START_WORK_YEAR
 
   return (
-    <div ref={ref}>
+    <div>
       <div
         id="about-me"
         className="relative flex h-full justify-center sm:bg-gradient-to-r sm:from-[#dfe9f3] sm:to-white sm:p-8 lg:bg-none"
@@ -33,7 +25,18 @@ const AboutMe: FC = () => {
         />
         <div className="relative grid h-full w-screen items-center justify-center text-xl text-black sm:max-h-[1000px] sm:grid-cols-1 sm:p-2 lg:max-w-[1200px] lg:grid-cols-2 lg:p-8">
           <motion.div
-            style={{ y: imageScrollY }}
+            initial={{
+              opacity: 0,
+              x: -50,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 1,
+              },
+            }}
+            viewport={{ once: false }}
             className="mask mask-parallelogram-4 items-center justify-center p-6 sm:hidden lg:flex"
           >
             <FlipCard
@@ -51,7 +54,18 @@ const AboutMe: FC = () => {
             />
           </motion.div>
           <motion.div
-            style={{ y: textScrollY }}
+            initial={{
+              opacity: 0,
+              x: -50,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 1,
+              },
+            }}
+            viewport={{ once: false }}
             className="relative sm:p-2 md:p-8 lg:p-4"
           >
             <div className="w-[150px] rounded-full lg:absolute lg:left-[-140px] lg:flex lg:h-[150px] lg:items-center lg:justify-center lg:bg-black lg:text-white">

@@ -1,19 +1,11 @@
-import { motion, useScroll, useTransform } from 'framer-motion'
 import Link from 'next/link'
-import { FC, useEffect, useRef, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 import AnimatedTextCharacter from '../components/AnimateTextCharacter'
 import AnimateTextList from '../components/AnimateTextList'
 import ImageProfile from '../components/ImageProfile'
 import SocialMedia from '../components/SocialMedia'
 
 const MainContent: FC = () => {
-  const ref = useRef(null)
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ['start start', 'end start'],
-  })
-  const bgScrollY = useTransform(scrollYProgress, [0, 3], ['0%', '100%'])
-  const imgScrollY = useTransform(scrollYProgress, [0, 3], ['0%', '100%'])
   const [isShowTextList, setIsShowTextList] = useState<boolean>(false)
   const textList = [
     'JavaScript',
@@ -30,12 +22,20 @@ const MainContent: FC = () => {
   }, [])
 
   return (
-    <div
-      ref={ref}
-      className="relative flex h-screen w-screen items-center justify-center text-xl sm:p-2 lg:max-h-[650px] lg:p-8"
-    >
-      <motion.div
-        style={{ y: bgScrollY }}
+    <div className="relative flex h-screen w-screen items-center justify-center text-xl sm:p-2 lg:max-h-[650px] lg:p-8">
+      <div
+        initial={{
+          opacity: 0,
+          x: -50,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 1,
+          },
+        }}
+        viewport={{ once: false }}
         className="sm:p-4 sm:text-center lg:min-w-[650px] lg:text-left"
       >
         <AnimatedTextCharacter
@@ -70,18 +70,15 @@ const MainContent: FC = () => {
             </button>
           </Link>
         </div>
-      </motion.div>
-      <motion.div
-        className="absolute z-[-1] sm:absolute sm:bottom-[-130px] sm:w-auto lg:relative lg:bottom-0 lg:h-auto"
-        style={{ y: imgScrollY }}
-      >
+      </div>
+      <div className="absolute z-[-1] sm:absolute sm:bottom-[-130px] sm:w-auto lg:relative lg:bottom-0 lg:h-auto">
         <ImageProfile
           imagePath="/images/profile-pic.png"
           className="sm:w-[350px] md:w-[400px] lg:rounded-full"
           width={400}
           height={400}
         />
-      </motion.div>
+      </div>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import SocialMedia from '../components/SocialMedia'
 
 const Footer: FC = () => {
   return (
-    <footer className="footer footer-center rounded bg-transparent text-white sm:py-[16px] md:p-10">
+    <footer className="footer footer-center rounded bg-transparent text-white sm:p-[16px] md:p-10">
       <nav className="grid-flow-col text-lg sm:hidden sm:gap-1 md:grid md:gap-4">
         <a className="hover:rounded-none focus:rounded-none" href="#">
           Home
