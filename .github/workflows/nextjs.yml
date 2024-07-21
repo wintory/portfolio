@@ -23,12 +23,15 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+        with:
+          static_site_generator: next
+
       - name: NPM install
         run: npm install
       - name: Build
-        run: |
-          npm run build
-          npm run export
+        run: yarn build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
