@@ -1,7 +1,7 @@
 const FullScreenLoader = () => {
   return (
-    <div className="full-screen-loader">
-      <div className="loader"></div>
+    <div className="flex h-screen w-screen items-center justify-center">
+      <span className="loading loading-bars sm:loading-md md:loading-lg" />
     </div>
   )
 }

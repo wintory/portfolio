@@ -2,16 +2,11 @@
 
 import ThemeProvider from '@/providers/ThemeProvider'
 import { motion } from 'framer-motion'
+import dynamic from 'next/dynamic'
 import { IBM_Plex_Sans } from 'next/font/google'
+import { Suspense } from 'react'
 import { ParallaxProvider } from 'react-scroll-parallax'
-import NavBar from './components/NavBar'
-import AboutMe from './sections/AboutMe'
-import Education from './sections/Education'
-import Experience from './sections/Experience'
-import Footer from './sections/Footer'
-import Internship from './sections/InternShip'
-import MainContent from './sections/MainContent'
-import MySkill from './sections/MySkill'
+import FullScreenLoader from './components/FullScreenLoader'
 
 const sans = IBM_Plex_Sans({
   weight: ['400'],
@@ -19,6 +14,15 @@ const sans = IBM_Plex_Sans({
 })
 
 export default function Home() {
+  const NavBar = dynamic(() => import('./components/NavBar'))
+  const MainContent = dynamic(() => import('./sections/MainContent'))
+  const AboutMe = dynamic(() => import('./sections/AboutMe'))
+  const MySkill = dynamic(() => import('./sections/MySkill'))
+  const Experience = dynamic(() => import('./sections/Experience'))
+  const Internship = dynamic(() => import('./sections/InternShip'))
+  const Education = dynamic(() => import('./sections/Education'))
+  const Footer = dynamic(() => import('./sections/Footer'))
+
   const contents = [
     <NavBar />,
     <MainContent />,
@@ -32,33 +36,35 @@ export default function Home() {
 
   return (
     <ThemeProvider>
-      <ParallaxProvider scrollAxis="vertical">
-        <main className="relative block h-[100vh] w-[100vw] items-center justify-center">
-          <style jsx global>{`
-            :root {
-              --font-google-ibm-plex-sans: ${sans.style.fontFamily};
-              font-family: var(--font-google-ibm-plex-sans);
-            }
-          `}</style>
-          {contents.map((content) => (
-            <motion.div
-              initial={{
-                opacity: 0,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  duration: 1,
-                },
-              }}
-              viewport={{ once: false }}
-            >
-              {content}
-            </motion.div>
-          ))}
-        </main>
-      </ParallaxProvider>
+      <Suspense fallback={<FullScreenLoader />}>
+        <ParallaxProvider scrollAxis="vertical">
+          <main className="relative block h-[100vh] w-[100vw] items-center justify-center">
+            <style jsx global>{`
+              :root {
+                --font-google-ibm-plex-sans: ${sans.style.fontFamily};
+                font-family: var(--font-google-ibm-plex-sans);
+              }
+            `}</style>
+            {contents.map((content) => (
+              <motion.div
+                initial={{
+                  opacity: 0,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: {
+                    duration: 1,
+                  },
+                }}
+                viewport={{ once: false }}
+              >
+                {content}
+              </motion.div>
+            ))}
+          </main>
+        </ParallaxProvider>
+      </Suspense>
     </ThemeProvider>
   )
 }
