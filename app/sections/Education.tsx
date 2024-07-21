@@ -31,7 +31,7 @@ const Education: FC = () => {
             viewport={{ once: false }}
             className="sm:pb-4 md:pb-6"
           >
-            <h3 className="mb-1 flex items-center font-semibold text-gray-900 sm:text-lg md:text-xl dark:text-white">
+            <h3 className="mb-1 flex items-center font-semibold text-gray-900 sm:text-lg md:text-xl dark:text-warning">
               Bachelor of Science in Information Technology
             </h3>
             <time className="mb-2 block font-normal leading-none text-white opacity-60 sm:text-sm">
@@ -47,37 +47,59 @@ const Education: FC = () => {
               aspirations.
             </p>
             <br />
-            <h3 className="mb-1 flex items-center font-semibold text-gray-900 sm:text-lg md:text-xl dark:text-white">
-              Senior Project: Miletrav Passionate Activity Platform
-            </h3>
-            <time className="mb-2 block font-normal leading-none text-white opacity-60 sm:text-sm">
-              Programming Languages: HTML, CSS, JAVASCRIPT, PYTHON
-            </time>
-            <time className="mb-2 block font-normal leading-none text-white opacity-60 sm:text-sm">
-              Database: Mysql, MongoDB, Firebase
-            </time>
-            <time className="mb-2 block font-normal leading-none text-white opacity-60 sm:text-sm">
-              Framework & Library: React.js, Next.js, Node.js, Feathers.js,
-              Restify, Numpy, Pandas, Scikit-learn, Graph-lab
-            </time>
-            <time className="mb-2 block font-normal leading-none text-white opacity-60 sm:text-sm">
-              Technique: Collaborative filtering via Jaccard similarity
-            </time>
-            <time className="mb-2 block font-normal leading-none text-white opacity-60 sm:text-sm">
-              Web server: NGINX
-            </time>
-            <time className="mb-2 block font-normal leading-none text-white opacity-60 sm:text-sm">
-              Other Tools: Github, VSCode, Pycharm
-            </time>
-            <Link
-              href="https://seniorproject.sit.kmutt.ac.th/showproject/IT57-BU14"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="btn btn-outline btn-warning z-[100] cursor-pointer rounded-none outline-yellow-50 sm:mt-6 sm:px-2 sm:text-sm md:mt-0 md:text-lg lg:mt-8 lg:px-4">
-                Senior Project Details
-              </button>
-            </Link>
+
+            <div className="grid sm:grid-cols-1 lg:mt-[80px] lg:grid-cols-2">
+              <div className="grid">
+                <h3 className="mb-1 flex items-center font-semibold sm:text-lg md:text-xl dark:text-warning">
+                  Senior Project: Miletrav Passionate Activity Platform
+                </h3>
+                <time className="mb-2 block font-normal leading-none text-white sm:text-sm">
+                  Programming Languages: HTML, CSS, JAVASCRIPT, PYTHON
+                </time>
+                <time className="mb-2 block font-normal leading-none text-white sm:text-sm">
+                  Database: Mysql, MongoDB, Firebase
+                </time>
+                <time className="mb-2 block font-normal leading-none text-white sm:text-sm">
+                  Framework & Library: React.js, Next.js, Node.js, Feathers.js,
+                  Restify, Numpy, Pandas, Scikit-learn, Graph-lab
+                </time>
+                <time className="mb-2 block font-normal leading-none text-white sm:text-sm">
+                  Technique: Collaborative filtering via Jaccard similarity
+                </time>
+                <time className="mb-2 block font-normal leading-none text-white sm:text-sm">
+                  Web server: NGINX
+                </time>
+                <time className="mb-2 block font-normal leading-none text-white sm:text-sm">
+                  Other Tools: Github, VSCode, Pycharm
+                </time>
+                <Link
+                  href="https://seniorproject.sit.kmutt.ac.th/showproject/IT57-BU14"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-outline btn-warning z-[100] cursor-pointer rounded-none outline-yellow-50 sm:mt-6 sm:px-2 sm:text-sm md:mt-0 md:text-lg lg:mt-8 lg:px-4">
+                    Senior Project Details
+                  </button>
+                </Link>
+              </div>
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  x: -50,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: {
+                    duration: 1,
+                  },
+                }}
+                viewport={{ once: false }}
+                className="sm:pt-8 lg:pt-0"
+              >
+                <img src="/images/miletrav.jpg" />
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>
