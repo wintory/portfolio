@@ -13,6 +13,7 @@ const Education: FC = () => {
           alt={''}
           width={1000}
           height={1000}
+          loading="lazy"
         />
         <div className="relflex grid w-full justify-center sm:py-2 md:py-4 lg:max-w-[1200px]">
           <div className="underline sm:pb-4 md:pb-6">
@@ -107,6 +108,7 @@ const Education: FC = () => {
                   height={800}
                   src="/images/miletrav.jpg"
                   alt="/images/miletrav.jpg"
+                  loading="lazy"
                 />
               </motion.div>
             </div>

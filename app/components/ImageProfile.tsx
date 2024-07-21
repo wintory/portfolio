@@ -24,7 +24,7 @@ const ImageProfile: FC<ImageProfileProps> = ({
       src={imagePath}
       alt={alt || ''}
       width={width}
-      priority
+      loading="lazy"
       height={height}
     />
   )

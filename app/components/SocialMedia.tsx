@@ -20,6 +20,7 @@ const SocialMedia = () => {
           className="cursor-pointer sm:h-[24px] sm:w-[24px] lg:h-[36px] lg:w-[36px]"
           width={36}
           height={36}
+          loading="lazy"
         />
       </Link>
       <Link
@@ -35,6 +36,7 @@ const SocialMedia = () => {
           className="cursor-pointer sm:h-[24px] sm:w-[24px] lg:h-[36px] lg:w-[36px]"
           width={36}
           height={36}
+          loading="lazy"
         />
       </Link>
       <Link
@@ -50,6 +52,7 @@ const SocialMedia = () => {
           className="cursor-pointer sm:h-[26px] sm:w-[26px] lg:h-[38px] lg:w-[38px]"
           width={38}
           height={38}
+          loading="lazy"
         />
       </Link>
     </div>

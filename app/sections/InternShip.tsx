@@ -10,6 +10,7 @@ const Internship: FC = () => {
           alt="/images/true-bg.png"
           width={1000}
           height={1000}
+          loading="lazy"
           className="absolute left-0 top-0 -z-10 h-full w-full bg-slate-200 object-cover opacity-10"
           src={'/images/true-bg.png'}
         />
@@ -69,6 +70,7 @@ const Internship: FC = () => {
                 alt="/images/true-academy.jpg"
                 width={600}
                 height={600}
+                loading="lazy"
               />
             </motion.div>
             <motion.div
@@ -90,6 +92,7 @@ const Internship: FC = () => {
                 alt="/images/true-cert.jpg"
                 width={600}
                 height={600}
+                loading="lazy"
               />
             </motion.div>
           </div>

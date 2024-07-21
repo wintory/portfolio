@@ -29,6 +29,7 @@ const AboutMe: FC = () => {
           alt={''}
           width={1000}
           height={1000}
+          loading="lazy"
         />
         <div className="relative grid h-full w-screen items-center justify-center text-xl text-black sm:max-h-[1000px] sm:grid-cols-1 sm:p-2 lg:max-w-[1200px] lg:grid-cols-2 lg:p-8">
           <motion.div
@@ -42,7 +43,7 @@ const AboutMe: FC = () => {
                   className="h-full w-full"
                   width={400}
                   height={400}
-                  priority
+                  loading="lazy"
                   alt={'about me image'}
                 />
               }

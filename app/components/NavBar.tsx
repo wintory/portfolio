@@ -35,6 +35,7 @@ const NavBar = () => {
               className="max-h-[120px]"
               width={150}
               height={150}
+              loading="lazy"
             />
           </div>
           <div className="hidden flex-none lg:block">

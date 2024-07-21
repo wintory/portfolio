@@ -13,6 +13,7 @@ const Gallery: FC = () => {
           src={'/images/gallery.jpg'}
           width={1000}
           height={1000}
+          loading="lazy"
           alt="gallery"
         />
         <div className="max-w-[1200px]">
@@ -40,6 +41,7 @@ const Gallery: FC = () => {
                   src="/images/galleries/gallery-4.jpg"
                   width={400}
                   height={400}
+                  loading="lazy"
                   alt="gallery-4"
                 />
               </div>
@@ -49,6 +51,7 @@ const Gallery: FC = () => {
                   src="/images/galleries/gallery-6.jpg"
                   width={400}
                   height={400}
+                  loading="lazy"
                   alt="gallery-6"
                 />
               </div>
@@ -58,6 +61,7 @@ const Gallery: FC = () => {
                   src="/images/galleries/gallery-8.jpg"
                   width={400}
                   height={400}
+                  loading="lazy"
                   alt="gallery-8"
                 />
               </div>
@@ -70,6 +74,7 @@ const Gallery: FC = () => {
                   src="/images/galleries/gallery-1.jpg"
                   width={400}
                   height={400}
+                  loading="lazy"
                   alt="gallery-1"
                 />
               </div>
@@ -79,6 +84,7 @@ const Gallery: FC = () => {
                   src="/images/galleries/gallery-5.jpg"
                   width={400}
                   height={400}
+                  loading="lazy"
                   alt="gallery-5"
                 />
               </div>
@@ -88,6 +94,7 @@ const Gallery: FC = () => {
                   src="/images/galleries/gallery-14.jpg"
                   width={400}
                   height={400}
+                  loading="lazy"
                   alt="gallery-14"
                 />
               </div>
@@ -100,6 +107,7 @@ const Gallery: FC = () => {
                   src="/images/galleries/gallery-3.jpg"
                   width={400}
                   height={400}
+                  loading="lazy"
                   alt="gallery-3"
                 />
               </div>
@@ -109,6 +117,7 @@ const Gallery: FC = () => {
                   src="/images/galleries/gallery-7.jpg"
                   width={400}
                   height={400}
+                  loading="lazy"
                   alt="gallery-7"
                 />
               </div>
@@ -118,6 +127,7 @@ const Gallery: FC = () => {
                   src="/images/galleries/gallery-15.jpg"
                   width={400}
                   height={400}
+                  loading="lazy"
                   alt="gallery-15"
                 />
               </div>
@@ -130,6 +140,7 @@ const Gallery: FC = () => {
                   src="/images/galleries/gallery-16.jpg"
                   width={400}
                   height={400}
+                  loading="lazy"
                   alt="gallery-16"
                 />
               </div>
@@ -139,6 +150,7 @@ const Gallery: FC = () => {
                   src="/images/galleries/gallery-18.jpg"
                   width={400}
                   height={400}
+                  loading="lazy"
                   alt="gallery-18"
                 />
               </div>
@@ -148,6 +160,7 @@ const Gallery: FC = () => {
                   src="/images/galleries/gallery-17.jpg"
                   width={400}
                   height={400}
+                  loading="lazy"
                   alt="gallery-17"
                 />
               </div>
