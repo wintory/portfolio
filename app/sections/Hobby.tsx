@@ -38,7 +38,7 @@ const Gallery: FC = () => {
               <div>
                 <Image
                   className="h-auto max-w-full rounded-none"
-                  src="/images/galleries/gallery-4.jpg"
+                  src="/images/gallery/gallery-4.jpg"
                   width={400}
                   height={400}
                   loading="lazy"
@@ -48,7 +48,7 @@ const Gallery: FC = () => {
               <div>
                 <Image
                   className="h-auto max-w-full rounded-none"
-                  src="/images/galleries/gallery-6.jpg"
+                  src="/images/gallery/gallery-6.jpg"
                   width={400}
                   height={400}
                   loading="lazy"
@@ -58,7 +58,7 @@ const Gallery: FC = () => {
               <div>
                 <Image
                   className="h-auto max-w-full rounded-none"
-                  src="/images/galleries/gallery-8.jpg"
+                  src="/images/gallery/gallery-8.jpg"
                   width={400}
                   height={400}
                   loading="lazy"
@@ -71,7 +71,7 @@ const Gallery: FC = () => {
               <div>
                 <Image
                   className="h-auto max-w-full rounded-none"
-                  src="/images/galleries/gallery-1.jpg"
+                  src="/images/gallery/gallery-1.jpg"
                   width={400}
                   height={400}
                   loading="lazy"
@@ -81,7 +81,7 @@ const Gallery: FC = () => {
               <div>
                 <Image
                   className="h-auto max-w-full rounded-none"
-                  src="/images/galleries/gallery-5.jpg"
+                  src="/images/gallery/gallery-5.jpg"
                   width={400}
                   height={400}
                   loading="lazy"
@@ -91,7 +91,7 @@ const Gallery: FC = () => {
               <div>
                 <Image
                   className="h-auto max-w-full rounded-none"
-                  src="/images/galleries/gallery-14.jpg"
+                  src="/images/gallery/gallery-14.jpg"
                   width={400}
                   height={400}
                   loading="lazy"
@@ -104,7 +104,7 @@ const Gallery: FC = () => {
               <div>
                 <Image
                   className="h-auto max-w-full rounded-none"
-                  src="/images/galleries/gallery-3.jpg"
+                  src="/images/gallery/gallery-3.jpg"
                   width={400}
                   height={400}
                   loading="lazy"
@@ -114,7 +114,7 @@ const Gallery: FC = () => {
               <div>
                 <Image
                   className="h-auto max-w-full rounded-none"
-                  src="/images/galleries/gallery-7.jpg"
+                  src="/images/gallery/gallery-7.jpg"
                   width={400}
                   height={400}
                   loading="lazy"
@@ -124,7 +124,7 @@ const Gallery: FC = () => {
               <div>
                 <Image
                   className="h-auto max-w-full rounded-none"
-                  src="/images/galleries/gallery-15.jpg"
+                  src="/images/gallery/gallery-15.jpg"
                   width={400}
                   height={400}
                   loading="lazy"
@@ -137,7 +137,7 @@ const Gallery: FC = () => {
               <div>
                 <Image
                   className="h-auto max-w-full rounded-none"
-                  src="/images/galleries/gallery-16.jpg"
+                  src="/images/gallery/gallery-16.jpg"
                   width={400}
                   height={400}
                   loading="lazy"
@@ -147,7 +147,7 @@ const Gallery: FC = () => {
               <div>
                 <Image
                   className="h-auto max-w-full rounded-none"
-                  src="/images/galleries/gallery-18.jpg"
+                  src="/images/gallery/gallery-18.jpg"
                   width={400}
                   height={400}
                   loading="lazy"
@@ -157,7 +157,7 @@ const Gallery: FC = () => {
               <div>
                 <Image
                   className="h-auto max-w-full rounded-none"
-                  src="/images/galleries/gallery-17.jpg"
+                  src="/images/gallery/gallery-17.jpg"
                   width={400}
                   height={400}
                   loading="lazy"
