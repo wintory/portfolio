@@ -75,12 +75,12 @@ const Experience: FC = () => {
           Experience
         </p>
         <div className="relative z-20 flex h-full max-w-[1200px] justify-center">
-          <ol className="relative border-s border-gray-200">
+          <ol className="relative border-s border-gray-700">
             {content.map(({ title, date, description, isPresent }) => (
               <li key={title} className="mb-10 ms-8 md:p-4">
                 <span className="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-900 ring-8 ring-gray-900">
                   <svg
-                    className="h-2.5 w-2.5 text-blue-800"
+                    className="h-2.5 w-2.5 text-blue-300"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
