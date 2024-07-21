@@ -23,8 +23,8 @@ const Footer: FC = () => {
         >
           Internships
         </a>
-        <a className="hover:rounded-none focus:rounded-none" href="#gallery">
-          Gallery
+        <a className="hover:rounded-none focus:rounded-none" href="#education">
+          Education
         </a>
       </nav>
       <SocialMedia />

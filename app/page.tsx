@@ -6,6 +6,7 @@ import { IBM_Plex_Sans } from 'next/font/google'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import NavBar from './components/NavBar'
 import AboutMe from './sections/AboutMe'
+import Education from './sections/Education'
 import Experience from './sections/Experience'
 import Footer from './sections/Footer'
 import Internship from './sections/InternShip'
@@ -25,6 +26,7 @@ export default function Home() {
     <MySkill />,
     <Experience />,
     <Internship />,
+    <Education />,
     <Footer />,
   ]
 

@@ -71,14 +71,14 @@ const NavBar = () => {
                   Internships
                 </Link>
               </li>
-              {/* <li>
+              <li>
                 <Link
                   className="hover:rounded-none hover:bg-transparent focus:rounded-none focus:bg-transparent active:bg-transparent"
-                  href="#gallery"
+                  href="#education"
                 >
-                  Gallery
+                  Education
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>
