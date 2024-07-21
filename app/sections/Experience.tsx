@@ -64,15 +64,6 @@ const Experience: FC = () => {
         'Maintained digital face-to-face applications.',
       ],
     },
-    {
-      title: 'True Academy Project (Internship)',
-      date: 'May - July 2017',
-      isPresent: false,
-      description: [
-        'Maintain to use the internal application for True Corp employees.',
-        'Enhanced internal application performance to improve user experience.',
-      ],
-    },
   ]
   return (
     <>
@@ -110,7 +101,7 @@ const Experience: FC = () => {
                       duration: 1,
                     },
                   }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false }}
                 >
                   <h3 className="mb-1 flex items-center font-semibold text-gray-900 sm:text-lg md:text-xl dark:text-black">
                     {title}

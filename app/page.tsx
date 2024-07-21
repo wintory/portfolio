@@ -50,7 +50,7 @@ export default function Home() {
                   duration: 1,
                 },
               }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
             >
               {content}
             </motion.div>
