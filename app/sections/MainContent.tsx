@@ -23,21 +23,7 @@ const MainContent: FC = () => {
 
   return (
     <div className="relative flex h-screen w-screen items-center justify-center text-xl sm:p-2 lg:max-h-[650px] lg:p-8">
-      <div
-        initial={{
-          opacity: 0,
-          x: -50,
-        }}
-        whileInView={{
-          opacity: 1,
-          x: 0,
-          transition: {
-            duration: 1,
-          },
-        }}
-        viewport={{ once: false }}
-        className="sm:p-4 sm:text-center lg:min-w-[650px] lg:text-left"
-      >
+      <div className="sm:p-4 sm:text-center lg:min-w-[650px] lg:text-left">
         <AnimatedTextCharacter
           className="text-bold mb-2 sm:text-sm md:text-lg lg:pr-1"
           text="Hello there 👋 I'm"
