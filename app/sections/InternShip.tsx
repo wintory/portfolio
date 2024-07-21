@@ -6,7 +6,7 @@ const Internship: FC = () => {
     <div id="internships">
       <div className="relative -z-20 grid h-full justify-center bg-[rgb(90,36,30)] sm:p-8 md:p-[100px]">
         <img
-          className="absolute left-0 top-0 -z-10 h-full w-full bg-slate-200 object-cover opacity-20"
+          className="absolute left-0 top-0 -z-10 h-full w-full bg-slate-200 object-cover opacity-10"
           src={'/images/true-bg.png'}
         />
         <div className="relflex grid w-full justify-center sm:py-2 md:py-4 lg:max-w-[1200px]">
