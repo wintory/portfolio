@@ -6,11 +6,11 @@ import ImageScrollHorizontal from '../components/ImageScrollHorizontal'
 
 const Experience: FC = () => {
   const scrollImages = [
-    'images/logos/appman-logo.png',
-    'images/logos/deeple-logo.png',
-    'images/logos/zipmex-logo.png',
-    'images/logos/zilo-logo.png',
-    'images/logos/true-academy-logo.png',
+    '/images/logos/appman-logo.png',
+    '/images/logos/deeple-logo.png',
+    '/images/logos/zipmex-logo.png',
+    '/images/logos/zilo-logo.png',
+    '/images/logos/true-academy-logo.png',
   ]
   const content: {
     title: string

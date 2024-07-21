@@ -1,11 +1,15 @@
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { FC } from 'react'
 
 const Internship: FC = () => {
   return (
     <div id="internship">
       <div className="relative -z-20 grid h-full justify-center bg-[rgb(90,36,30)] sm:p-8 md:p-[100px]">
-        <img
+        <Image
+          alt="/images/true-bg.png"
+          width={1200}
+          height={1200}
           className="absolute left-0 top-0 -z-10 h-full w-full bg-slate-200 object-cover opacity-10"
           src={'/images/true-bg.png'}
         />
@@ -60,7 +64,12 @@ const Internship: FC = () => {
               }}
               viewport={{ once: false }}
             >
-              <img src="/images/true-academy.jpg" />
+              <Image
+                src="/images/true-academy.jpg"
+                alt="/images/true-academy.jpg"
+                width={600}
+                height={600}
+              />
             </motion.div>
             <motion.div
               initial={{
@@ -76,7 +85,12 @@ const Internship: FC = () => {
               }}
               viewport={{ once: false }}
             >
-              <img src="/images/true-cert.jpg" />
+              <Image
+                src="/images/true-cert.jpg"
+                alt="/images/true-cert.jpg"
+                width={600}
+                height={600}
+              />
             </motion.div>
           </div>
         </div>

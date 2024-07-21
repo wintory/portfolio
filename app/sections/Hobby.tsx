@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { FC } from 'react'
 
 const Gallery: FC = () => {
@@ -7,9 +8,14 @@ const Gallery: FC = () => {
       className="relative -z-20 grid h-full justify-center sm:p-8 md:p-[100px]"
     >
       <div className="flex justify-center">
-        <img
+        <Image
           className="absolute left-0 top-0 -z-10 h-full w-full bg-slate-200 bg-cover object-cover opacity-80 blur-[5px]"
           src={'/images/gallery.jpg'}
+          width={60}
+          height={60}
+          alt="gallery"
+          width={60}
+          height={60}
         />
         <div className="max-w-[1200px]">
           <div className="sm:pb-4 md:pb-6">
@@ -31,84 +37,120 @@ const Gallery: FC = () => {
             {/* 1 */}
             <div className="grid gap-4">
               <div>
-                <img
+                <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-4.jpg"
+                  width={60}
+                  height={60}
+                  alt="gallery-4"
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-6.jpg"
+                  width={60}
+                  height={60}
+                  alt="gallery-6"
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-8.jpg"
+                  width={60}
+                  height={60}
+                  alt="gallery-8"
                 />
               </div>
             </div>
             {/* 2 */}
             <div className="grid gap-4">
               <div>
-                <img
+                <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-1.jpg"
+                  width={60}
+                  height={60}
+                  alt="gallery-1"
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-5.jpg"
+                  width={60}
+                  height={60}
+                  alt="gallery-5"
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-14.jpg"
+                  width={60}
+                  height={60}
+                  alt="gallery-14"
                 />
               </div>
             </div>
             {/* 3 */}
             <div className="grid gap-4">
               <div>
-                <img
+                <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-3.jpg"
+                  width={60}
+                  height={60}
+                  alt="gallery-3"
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-7.jpg"
+                  width={60}
+                  height={60}
+                  alt="gallery-7"
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-15.jpg"
+                  width={60}
+                  height={60}
+                  alt="gallery-15"
                 />
               </div>
             </div>
             {/* 4 */}
             <div className="grid gap-4">
               <div>
-                <img
+                <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-16.jpg"
+                  width={60}
+                  height={60}
+                  alt="gallery-16"
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-18.jpg"
+                  width={60}
+                  height={60}
+                  alt="gallery-18"
                 />
               </div>
               <div>
-                <img
+                <Image
                   className="h-auto max-w-full rounded-none"
                   src="/images/galleries/gallery-17.jpg"
+                  width={60}
+                  height={60}
+                  alt="gallery-17"
                 />
               </div>
             </div>

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
 
@@ -6,9 +7,12 @@ const Education: FC = () => {
   return (
     <div id="education">
       <div className="relative grid h-full justify-center sm:p-8 md:p-[100px]">
-        <img
+        <Image
           className="absolute left-0 top-0 -z-10 h-full w-full bg-slate-200 bg-cover object-cover opacity-10"
           src={'/images/sit-kmutt.png'}
+          alt={''}
+          width={60}
+          height={60}
         />
         <div className="relflex grid w-full justify-center sm:py-2 md:py-4 lg:max-w-[1200px]">
           <div className="underline sm:pb-4 md:pb-6">
@@ -98,7 +102,12 @@ const Education: FC = () => {
                 viewport={{ once: false }}
                 className="flex items-center justify-center sm:pt-8 lg:pt-0"
               >
-                <img src="/images/miletrav.jpg" />
+                <Image
+                  width={600}
+                  height={600}
+                  src="/images/miletrav.jpg"
+                  alt="/images/miletrav.jpg"
+                />
               </motion.div>
             </div>
           </motion.div>

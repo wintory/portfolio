@@ -25,15 +25,42 @@ export default function Home() {
   const Hobby = dynamic(() => import('./sections/Hobby'))
 
   const contents = [
-    <NavBar />,
-    <MainContent />,
-    <AboutMe />,
-    <MySkill />,
-    <Experience />,
-    <Internship />,
-    <Education />,
-    <Hobby />,
-    <Footer />,
+    {
+      key: 'NavBar',
+      component: <NavBar />,
+    },
+    {
+      key: 'MainContent',
+      component: <MainContent />,
+    },
+    {
+      key: 'AboutMe',
+      component: <AboutMe />,
+    },
+    {
+      key: 'MySkill',
+      component: <MySkill />,
+    },
+    {
+      key: 'Experience',
+      component: <Experience />,
+    },
+    {
+      key: 'Internship',
+      component: <Internship />,
+    },
+    {
+      key: 'Education',
+      component: <Education />,
+    },
+    {
+      key: 'Hobby',
+      component: <Hobby />,
+    },
+    {
+      key: 'Footer',
+      component: <Footer />,
+    },
   ]
 
   return (
@@ -47,8 +74,9 @@ export default function Home() {
                 font-family: var(--font-google-ibm-plex-sans);
               }
             `}</style>
-            {contents.map((content) => (
+            {contents.map(({ component, key }) => (
               <motion.div
+                key={key}
                 initial={{
                   opacity: 0,
                 }}
@@ -61,7 +89,7 @@ export default function Home() {
                 }}
                 viewport={{ once: false }}
               >
-                {content}
+                {component}
               </motion.div>
             ))}
           </main>
