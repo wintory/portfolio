@@ -115,7 +115,7 @@ const MySkill: FC = () => {
             <p className="text-white opacity-80 sm:text-sm md:text-lg xl:text-xl">
               Programming Languages
             </p>
-            <p className="sm:text-sm md:text-lg xl:text-xl">
+            <p className="text-white sm:text-sm md:text-lg xl:text-xl">
               HTML, CSS, JavaScript, TypeScript
             </p>
             <p className="grid text-white opacity-80 sm:text-sm md:text-lg xl:text-xl">
