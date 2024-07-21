@@ -66,9 +66,9 @@ const NavBar = () => {
               <li>
                 <Link
                   className="hover:rounded-none hover:bg-transparent focus:rounded-none focus:bg-transparent active:bg-transparent"
-                  href="#internships"
+                  href="#internship"
                 >
-                  Internships
+                  Internship
                 </Link>
               </li>
               <li>
@@ -77,6 +77,14 @@ const NavBar = () => {
                   href="#education"
                 >
                   Education
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="hover:rounded-none hover:bg-transparent focus:rounded-none focus:bg-transparent active:bg-transparent"
+                  href="#hobby"
+                >
+                  Hobby
                 </Link>
               </li>
             </ul>

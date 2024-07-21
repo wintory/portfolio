@@ -3,7 +3,7 @@ import { FC } from 'react'
 const Gallery: FC = () => {
   return (
     <div
-      id="gallery"
+      id="hobby"
       className="relative -z-20 grid h-full justify-center sm:p-8 md:p-[100px]"
     >
       <div className="flex justify-center">
@@ -12,6 +12,11 @@ const Gallery: FC = () => {
           src={'/images/gallery.jpg'}
         />
         <div className="max-w-[1200px]">
+          <div className="sm:pb-4 md:pb-6">
+            <p className="font-bold text-black underline sm:text-xl lg:text-3xl">
+              Hobby
+            </p>
+          </div>
           <p className="list-disc text-black sm:pb-4 sm:text-sm md:text-lg lg:pb-8">
             Beyond coding and creating seamless user experiences, I have a deep
             passion for travel and photography. Exploring new destinations not

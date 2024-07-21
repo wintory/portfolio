@@ -22,7 +22,7 @@ export default function Home() {
   const Internship = dynamic(() => import('./sections/InternShip'))
   const Education = dynamic(() => import('./sections/Education'))
   const Footer = dynamic(() => import('./sections/Footer'))
-  const Gallery = dynamic(() => import('./sections/Gallery'))
+  const Hobby = dynamic(() => import('./sections/Hobby'))
 
   const contents = [
     <NavBar />,
@@ -32,7 +32,7 @@ export default function Home() {
     <Experience />,
     <Internship />,
     <Education />,
-    <Gallery />,
+    <Hobby />,
     <Footer />,
   ]
 
