@@ -17,8 +17,11 @@ const Footer: FC = () => {
         <a className="hover:rounded-none focus:rounded-none" href="#experience">
           Experience
         </a>
-        <a className="hover:rounded-none focus:rounded-none" href="#work">
-          Work
+        <a
+          className="hover:rounded-none focus:rounded-none"
+          href="#internships"
+        >
+          Internships
         </a>
         <a className="hover:rounded-none focus:rounded-none" href="#gallery">
           Gallery
