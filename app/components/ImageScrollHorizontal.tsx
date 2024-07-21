@@ -34,10 +34,10 @@ const ImageScrollHorizontal: FC<ParallaxProps> = ({ images }) => {
               <Image
                 loading="lazy"
                 src={image}
-                width={100}
+                width={200}
                 height={60}
                 alt={`Image ${index + 1}`}
-                className="image w-auto sm:h-[20px] sm:px-4 md:h-[40px] md:px-8 xl:h-[60px]"
+                className="image w-auto sm:h-[20px] sm:px-2 md:h-[40px] md:px-8 xl:h-[60px]"
               />
             </div>
           </div>
