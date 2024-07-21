@@ -15,8 +15,8 @@ const Internship: FC = () => {
           src={'/images/true-bg.png'}
         />
         <div className="relflex grid w-full justify-center sm:py-2 md:py-4 lg:max-w-[1200px]">
-          <div className="underline sm:pb-4 md:pb-6">
-            <p className="font-bold text-white sm:text-xl lg:text-3xl">
+          <div className="sm:pb-4 md:pb-6">
+            <p className="font-bold text-white underline sm:text-xl lg:text-3xl">
               Internship
             </p>
           </div>
