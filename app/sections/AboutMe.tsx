@@ -21,8 +21,12 @@ const AboutMe: FC = () => {
     <div ref={ref}>
       <div
         id="about-me"
-        className="relative flex h-full justify-center bg-gradient-to-r from-[#dfe9f3] to-white sm:p-8"
+        className="relative flex h-full justify-center sm:bg-gradient-to-r sm:from-[#dfe9f3] sm:to-white sm:p-8 lg:bg-none"
       >
+        <img
+          className="absolute left-0 top-0 -z-10 h-full w-full bg-slate-200 bg-cover object-cover opacity-100 blur-[2px] sm:hidden lg:block"
+          src={'/images/about-me-bg.jpg'}
+        />
         <div className="relative grid h-full w-screen items-center justify-center text-xl text-black sm:max-h-[1000px] sm:grid-cols-1 sm:p-2 lg:max-w-[1200px] lg:grid-cols-2 lg:p-8">
           <motion.div
             style={{ y: imageScrollY }}

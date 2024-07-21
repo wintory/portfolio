@@ -46,9 +46,10 @@ const Education: FC = () => {
               information and abilities I need to succeed in my career
               aspirations.
             </p>
-            <br />
-
-            <div className="grid sm:grid-cols-1 lg:mt-[80px] lg:grid-cols-2">
+            <br className="sm:hidden lg:block" />
+            <div className="divider lg:divider-vertical" />
+            <br className="sm:hidden lg:block" />
+            <div className="grid sm:grid-cols-1 lg:grid-cols-2">
               <div className="grid">
                 <h3 className="mb-1 flex items-center font-semibold sm:text-lg md:text-xl dark:text-warning">
                   Senior Project: Miletrav Passionate Activity Platform
@@ -95,7 +96,7 @@ const Education: FC = () => {
                   },
                 }}
                 viewport={{ once: false }}
-                className="sm:pt-8 lg:pt-0"
+                className="flex items-center justify-center sm:pt-8 lg:pt-0"
               >
                 <img src="/images/miletrav.jpg" />
               </motion.div>
