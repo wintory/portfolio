@@ -11,11 +11,9 @@ const Gallery: FC = () => {
         <Image
           className="absolute left-0 top-0 -z-10 h-full w-full bg-slate-200 bg-cover object-cover opacity-80 blur-[5px]"
           src={'/images/gallery.jpg'}
-          width={60}
-          height={60}
+          width={1000}
+          height={1000}
           alt="gallery"
-          width={60}
-          height={60}
         />
         <div className="max-w-[1200px]">
           <div className="sm:pb-4 md:pb-6">

@@ -11,8 +11,8 @@ const Education: FC = () => {
           className="absolute left-0 top-0 -z-10 h-full w-full bg-slate-200 bg-cover object-cover opacity-10"
           src={'/images/sit-kmutt.png'}
           alt={''}
-          width={60}
-          height={60}
+          width={1000}
+          height={1000}
         />
         <div className="relflex grid w-full justify-center sm:py-2 md:py-4 lg:max-w-[1200px]">
           <div className="underline sm:pb-4 md:pb-6">
@@ -39,7 +39,7 @@ const Education: FC = () => {
               Bachelor of Science in Information Technology
             </h3>
             <time className="mb-2 block font-normal leading-none text-white opacity-60 sm:text-sm">
-              King Mongkut's University of Technology Thonburi
+              King Mongkut&apos;s University of Technology Thonburi
             </time>
             <p className="list-disc text-white sm:text-sm md:text-lg">
               My professional path was significantly shaped by my time at KMUTT.
