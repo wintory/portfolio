@@ -83,7 +83,7 @@ const Education: FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="btn btn-outline btn-warning z-[100] cursor-pointer rounded-none outline-yellow-50 sm:mt-6 sm:px-2 sm:text-sm md:mt-0 md:text-lg lg:mt-8 lg:px-4">
+                  <button className="btn btn-outline btn-warning z-[100] cursor-pointer rounded-md outline-yellow-50 sm:mt-6 sm:px-2 sm:text-sm md:mt-0 md:text-lg lg:mt-8 lg:px-4">
                     Senior Project Details
                   </button>
                 </Link>
@@ -104,6 +104,7 @@ const Education: FC = () => {
                 className="flex items-center justify-center sm:pt-8 lg:pt-0"
               >
                 <Image
+                  className="rounded-md"
                   width={800}
                   height={800}
                   src="/images/miletrav.jpg"

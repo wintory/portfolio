@@ -51,7 +51,7 @@ const MainContent: FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="btn btn-outline btn-warning rounded-[0px] outline-yellow-50 sm:px-2 sm:text-sm md:text-lg lg:mt-8 lg:px-4">
+            <button className="btn btn-outline btn-warning rounded-md outline-yellow-50 sm:px-2 sm:text-sm md:text-lg lg:mt-8 lg:px-4">
               Download Resume
             </button>
           </Link>

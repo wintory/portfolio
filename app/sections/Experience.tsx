@@ -106,7 +106,7 @@ const Experience: FC = () => {
                   <h3 className="mb-1 flex items-center font-semibold text-black sm:text-lg md:text-xl">
                     {title}
                     {isPresent && (
-                      <span className="me-2 ms-3 rounded-none bg-[#6934b3] px-2.5 py-0.5 text-sm font-medium text-white sm:hidden md:block">
+                      <span className="me-2 ms-3 rounded-md bg-[#6934b3] px-2.5 py-0.5 text-sm font-medium text-white sm:hidden md:block">
                         Present
                       </span>
                     )}

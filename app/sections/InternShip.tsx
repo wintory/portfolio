@@ -66,6 +66,7 @@ const Internship: FC = () => {
               viewport={{ once: false }}
             >
               <Image
+                className="rounded-md"
                 src="/images/true-academy.jpg"
                 alt="/images/true-academy.jpg"
                 width={600}
@@ -88,6 +89,7 @@ const Internship: FC = () => {
               viewport={{ once: false }}
             >
               <Image
+                className="rounded-md"
                 src="/images/true-cert.jpg"
                 alt="/images/true-cert.jpg"
                 width={600}
