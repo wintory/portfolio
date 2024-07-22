@@ -42,7 +42,7 @@ const NavBar = () => {
             <ul className="text-bold menu menu-horizontal text-xl">
               <li>
                 <Link
-                  className="hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
+                  className="text-white hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
                   href="#about-me"
                 >
                   About me
@@ -50,7 +50,7 @@ const NavBar = () => {
               </li>
               <li>
                 <Link
-                  className="hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
+                  className="text-white hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
                   href="#skill"
                 >
                   Skill
@@ -58,7 +58,7 @@ const NavBar = () => {
               </li>
               <li>
                 <Link
-                  className="hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
+                  className="text-white hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
                   href="#experience"
                 >
                   Experience
@@ -66,7 +66,7 @@ const NavBar = () => {
               </li>
               <li>
                 <Link
-                  className="hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
+                  className="text-white hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
                   href="#internship"
                 >
                   Internship
@@ -74,7 +74,7 @@ const NavBar = () => {
               </li>
               <li>
                 <Link
-                  className="hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
+                  className="text-white hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
                   href="#education"
                 >
                   Education
@@ -82,7 +82,7 @@ const NavBar = () => {
               </li>
               <li>
                 <Link
-                  className="hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
+                  className="text-white hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
                   href="#hobby"
                 >
                   Hobby
