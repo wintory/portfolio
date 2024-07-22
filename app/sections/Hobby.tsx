@@ -9,7 +9,7 @@ const Gallery: FC = () => {
     >
       <div className="flex justify-center">
         <Image
-          className="absolute left-0 top-0 -z-10 h-full w-full bg-slate-200 bg-cover object-cover opacity-90 blur-[5px]"
+          className="absolute left-0 top-0 -z-10 h-full w-full bg-slate-200 bg-cover object-cover opacity-90"
           src={'/images/gallery-img.jpg'}
           width={1000}
           height={1000}
