@@ -1,7 +1,11 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 const NavBar = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id)
+    element?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <div className="drawer absolute left-0 top-0 z-[100] flex max-w-[1200px] sm:hidden md:px-[24px] lg:left-[50%] lg:top-2 lg:block lg:w-[100%] lg:translate-x-[-50%] lg:px-[32px]">
       <input id="menu" type="checkbox" className="drawer-toggle" />
@@ -41,52 +45,52 @@ const NavBar = () => {
           <div className="hidden flex-none lg:block">
             <ul className="text-bold menu menu-horizontal text-xl">
               <li>
-                <Link
+                <div
                   className="text-white hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
-                  href="#about-me"
+                  onClick={() => scrollToSection('about-me')}
                 >
                   About me
-                </Link>
+                </div>
               </li>
               <li>
-                <Link
+                <div
                   className="text-white hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
-                  href="#skill"
+                  onClick={() => scrollToSection('skill')}
                 >
                   Skill
-                </Link>
+                </div>
               </li>
               <li>
-                <Link
+                <div
                   className="text-white hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
-                  href="#experience"
+                  onClick={() => scrollToSection('experience')}
                 >
                   Experience
-                </Link>
+                </div>
               </li>
               <li>
-                <Link
+                <div
                   className="text-white hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
-                  href="#internship"
+                  onClick={() => scrollToSection('internship')}
                 >
                   Internship
-                </Link>
+                </div>
               </li>
               <li>
-                <Link
+                <div
                   className="text-white hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
-                  href="#education"
+                  onClick={() => scrollToSection('education')}
                 >
                   Education
-                </Link>
+                </div>
               </li>
               <li>
-                <Link
+                <div
                   className="text-white hover:rounded-md hover:bg-transparent focus:rounded-md focus:bg-transparent active:bg-transparent"
-                  href="#hobby"
+                  onClick={() => scrollToSection('hobby')}
                 >
                   Hobby
-                </Link>
+                </div>
               </li>
             </ul>
           </div>
