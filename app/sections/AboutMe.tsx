@@ -76,7 +76,7 @@ const AboutMe: FC = () => {
             <br />
             <span className="md:text-md sm:text-sm lg:text-lg xl:text-xl">
               I am a passionate and experienced Front-End Developer with over{' '}
-              {expYear} years of experience in creating dynamic and
+              {expYear}+ years of experience in creating dynamic and
               user-friendly web applications.
             </span>
             <br />

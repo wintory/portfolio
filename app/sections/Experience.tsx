@@ -19,27 +19,24 @@ const Experience: FC = () => {
     description: string[]
   }[] = [
     {
-      title: 'Zilo Asia Co., Ltd (Front-End Chapter Lead)',
+      title: 'Zilo Asia Co., Ltd (Front-End Lead)',
       date: 'May 2023 - Present',
       isPresent: true,
       description: [
-        'Managed front-end teams in Thailand and the UK.',
-        'Using the SDLC methodology, design and enhance the development process to make it closer to alignment with agile teams.',
-        'Collaborated with product owners and UX/UI designers to deliver projects meeting client requirements.',
-        'Designed and maintained a web application providing technical assistance and fund management features.',
-        'Created internal tools and UI Core library to support the main product.',
+        'Lead a cross-functional team of 8 developers across Thailand and the UK, mentored junior developers, improving overall team competency and reducing code review times, enhancing sprint efficiency and accelerating project delivery.',
+        'Designed and maintained a web application providing technical assistance and fund management features',
+        'Developed a UI Core library and automation pipeline that streamlined development processes and ensured consistent design and functionality across the product.',
       ],
     },
     {
-      title:
-        'Zipmex Technology Co., Ltd (Senior Software Engineer, Front-End Squad Lead)',
+      title: 'Zipmex Technology Co., Ltd (Front-End Squad Lead)',
       date: 'Mar 2022 - Apr 2023',
       isPresent: false,
       description: [
-        'Developed and maintained cryptocurrency exchange platforms (ZipLock, ZipUp+, User Wallets).',
-        'Created Zipmex Landing and Marketplace pages.',
         'Lead the front-end squad team, collaborating closely with product owners and UX/UI designers.',
-        'Enhanced application performance and user experience.',
+        'Developed and maintained cryptocurrency exchange platforms (ZipLock, ZipUp+, User Wallets).',
+        'Created Zipmex Landing and Marketplace pages using Next.js and Material UI, overcoming SEO and performance bottlenecks.',
+        'Enhanced application performance, leading to quicker load times.',
       ],
     },
     {
@@ -47,21 +44,20 @@ const Experience: FC = () => {
       date: 'Jun 2021 - Feb 2022',
       isPresent: false,
       description: [
-        'Developed and maintained an e-commerce platform and chatbot.',
-        'Improved application performance by reducing unused code and optimizing re-renders.',
-        'Implemented features for chat systems, product inventory, shipping, invoices, and web-shopping platforms.',
+        'Led the development and maintenance of an e-commerce platform and an interactive chatbot.',
+        'Boosted application performance by optimizing re-renders, resulting in quicker load times.',
+        'Delivered key features for chat systems, product inventory management, shipping processes, invoicing, and web-shopping functionalities.',
       ],
     },
     {
-      title: 'AppMan Co., Ltd (Front-End Developer)',
+      title: 'AppMan Co., Ltd (Software Engineer)',
       date: 'Jun 2018 - May 2021',
       isPresent: false,
       description: [
-        'Created and maintained Insurance online services and applications using JavaScript and TypeScript.',
-        'Worked with software architects to develop and implement web apps.',
-        'Enhanced application performance to improve user experience.',
-        'Developed chatbot applications for platforms like LINE and Facebook.',
-        'Maintained digital face-to-face applications.',
+        'Developed and sustained online insurance services and applications using JavaScript and TypeScript.',
+        'Improved user experience and application performance by eliminating redundant code and enhancing re-render efficiency.',
+        'Collaborated with software architects to design and implement web applications.',
+        'Led the development and maintenance of a chatbot applications, handling both Front-End and Back-End tasks for platforms like LINE and Facebook.',
       ],
     },
   ]
