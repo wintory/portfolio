@@ -47,7 +47,7 @@ const MainContent: FC = () => {
             <SocialMedia />
           </div>
           <Link
-            href="https://drive.google.com/file/d/12ZZyewaGiyoUQcKaSuC-7C2DI-XBHRS6/view"
+            href="https://drive.google.com/file/d/1k6S1teZ5h_Mq5-U_Atf-8zuNDml_gY0f/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
